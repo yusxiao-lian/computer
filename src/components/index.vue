@@ -160,6 +160,7 @@ export default {
         row.sum=paper;
         // if(row.materials && row.way && row.parts && row.number) {
         //     row.sum=index
+        //111
         // }
     },
     paperBlur(row) {
