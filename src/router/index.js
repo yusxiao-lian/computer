@@ -20,8 +20,8 @@ let router = new VueRouter({
         // pc
         {
             name: "pcIndex",
-            path: "pcIndex",
-            component: pcIndex,
+            path: "/",
+            component: Index,
             meta: { title: "Invitations" },
             children: [
                 {

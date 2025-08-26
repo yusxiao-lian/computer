@@ -21,6 +21,7 @@ export default {
         }
     },
     mounted() {
+        this.$router.push("/Home")
     },
     methods: {
         handleSelect(index) {
