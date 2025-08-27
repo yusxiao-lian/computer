@@ -1,0 +1,13 @@
+@font-face {  
+  font-family: 'myfont_2';
+  src: url('Comforter.ttf'); 
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {  
+  font-family: 'myfont';
+  src: url('DancingScript-VariableFont_wght.ttf'); 
+  font-weight: normal;  
+  font-style: normal;  
+}

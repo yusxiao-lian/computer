@@ -23,5 +23,9 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+body {
+    background-color: #ffffff;
+    padding-bottom: 35px;
+}
 </style>
