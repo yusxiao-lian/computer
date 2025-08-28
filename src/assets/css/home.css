@@ -1,6 +1,13 @@
 @import "../../common/font/font.css";
 .font_myfont {
   font-family: 'myfont';
+  font-size: 30px;
+  font-weight: 600;
+}
+.font_myfont_two {
+  font-family: 'myfont_2';
+  font-size: 30px;
+  font-weight: 600;
 }
 .content-box {
   width: 1600px;

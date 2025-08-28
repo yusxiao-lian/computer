@@ -22,9 +22,14 @@ export default {
     },
     mounted() {
         this.$router.push("/Home")
+         this.$bus.$on("toProduct",()=>{
+            this.$router.replace("/Products")
+            this.activeIndex = "/Products"
+         })
     },
     methods: {
         handleSelect(index) {
+            this.activeIndex = index;
         }
     }
 }

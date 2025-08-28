@@ -42,6 +42,9 @@
 import banner_1 from '../../../assets/img/banner/banner_1.jpg';
 import banner_2 from '../../../assets/img/banner/banner_2.jpg';
 import banner_3 from '../../../assets/img/banner/banner_3.jpg';
+import banner_4 from '../../../assets/img/banner/banner_4.jpg';
+import banner_5 from '../../../assets/img/banner/banner_5.jpg';
+import banner_6 from '../../../assets/img/banner/banner_6.jpg';
 
 export default {
   name: 'Carousel',
@@ -103,20 +106,21 @@ export default {
       totalImages: 0,
       items: [
         {
-          image: banner_1,
-          title: '第一张轮播图',
-          description: '这是第一张轮播图的描述'
+          image: banner_2,
         },
         {
-          image: banner_2,
-          title: '第二张轮播图',
-          description: '这是第二张轮播图的描述'
+          image: banner_1,
         },
         {
           image: banner_3,
-          title: '第三张轮播图',
-          description: '这是第三张轮播图的描述'
-        }
+        },
+        {
+          image: banner_4,
+        },{
+          image: banner_5,
+        },{
+          image: banner_6,
+        },
       ]
     }
   },
