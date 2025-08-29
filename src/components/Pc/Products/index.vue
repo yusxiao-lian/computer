@@ -46,8 +46,8 @@
         <div class="products_imgs">
           <div v-for="(item, index) in productLists" :key="item.imgUrl">
               <img
-              @click="toDetail"
-              :src="`item.imgUrl`"
+              @click="toDetail(item.childrens)"
+              :src="item.imgUrl"
               alt=""
             />
             <p>{{item.desc}}</p>
@@ -66,8 +66,7 @@ export default {
     };
   },
   created() {
-    console.log(productList(), "sss");
-    this.productLists = productList() || [];
+    this.productLists = productList() || []
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -76,7 +75,8 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
-    toDetail() {
+    toDetail(childrens) {
+      localStorage.setItem("proChildrens", JSON.stringify(childrens))
       this.$router.push({
         path: "/Detail",
       });
