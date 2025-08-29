@@ -36,6 +36,12 @@ let router = new VueRouter({
                     component: ()=>import("@/components/Pc/Products/index.vue"),
                     meta: { title: "Invitations" },
                 },
+                 {
+                    name: "Detail",
+                    path: "/Detail",
+                    component: ()=>import("@/components/Pc/Products/detail.vue"),
+                    meta: { title: "Invitations" },
+                },
                 {
                     name: "Contact",
                     path: "/Contact",

@@ -43,16 +43,31 @@
           >
           <p class="title_text_two">Let's create your perfect day!</p>
         </div>
+        <div class="products_imgs">
+          <div v-for="(item, index) in productLists" :key="item.imgUrl">
+              <img
+              @click="toDetail"
+              :src="`item.imgUrl`"
+              alt=""
+            />
+            <p>{{item.desc}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import { productList } from "./products.js";
 export default {
   data() {
     return {
-      isMenuFixed: 500,
+      productLists: [],
     };
+  },
+  created() {
+    console.log(productList(), "sss");
+    this.productLists = productList() || [];
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -61,14 +76,18 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    toDetail() {
+      this.$router.push({
+        path: "/Detail",
+      });
+    },
     handleScroll() {
       const menuRect = this.$refs.top_img.getBoundingClientRect();
-      console.log(menuRect.top, "menuRect");
       if (menuRect.top < -10 && menuRect.top > -420) {
-        this.$refs.menu.style.top = (500 + menuRect.top) + "px"
+        this.$refs.menu.style.top = 500 + menuRect.top + "px";
       }
-      if (menuRect.top == 78) {
-        this.$refs.menu.style.top = "500px"
+      if (menuRect.top > 78) {
+        this.$refs.menu.style.top = "500px";
       }
     },
   },
@@ -78,7 +97,7 @@ export default {
 @import "../../../assets/css/home.less";
 
 .products_box {
-  padding: 8px 0 0 0;
+  padding: 20px 0 0 0;
 }
 .top_img {
   position: relative;
@@ -107,15 +126,35 @@ export default {
 }
 .product_list {
   width: calc(100% - 200px);
-  height: 1600px;
   padding: 0 0 0 15px;
   .title_text_one {
     font-size: 20px;
   }
   .title_text_two {
     margin: 0;
-    font-size: 22px;
+    font-size: 28px;
     font-family: myfont;
+    font-weight: 600;
+  }
+  .products_imgs {
+    display: flex;
+    flex-wrap: wrap;
+   
+    div {
+       padding: 20px 0 0 0;
+       margin: 0 25px 25px 0;
+      p {
+        margin: 10px 0 0 0;
+        width: 250px;
+        text-align: center;
+      }
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      
+      cursor: pointer;
+    }
   }
 }
 </style>

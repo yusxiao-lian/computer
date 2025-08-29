@@ -1,8 +1,8 @@
 <template>
     <div class="content-box">
         <div class="menu-box">
-            <img class="logo" src="" alt="">
-            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" background-color="#ffffff" active-text-color="#409eff"  router>
+            <img class="logo" src="@/assets/img/home/logo.png" alt="">
+            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" background-color="#ffffff" active-text-color="#409eff" @select="menuSelect">
                 <el-menu-item index="/Home">Home</el-menu-item>
                 <el-menu-item index="/Products">INVITATIONS</el-menu-item>
                 <el-menu-item index="/Contact">COMTACT US</el-menu-item>
@@ -28,8 +28,10 @@ export default {
          })
     },
     methods: {
-        handleSelect(index) {
+        menuSelect(index) {
             this.activeIndex = index;
+            console.log(index, "indexindex")
+            this.$router.push(index)
         }
     }
 }
@@ -47,9 +49,9 @@ export default {
     display: flex;
     align-items: center;
     .logo {
-        width: 50px;
-        height: 50px;
-        margin-right: 100px;
+        margin: 15px 90px 0 25px;
+        width: 150px;
+        height: 70px;
     }
 }
 .content_main {

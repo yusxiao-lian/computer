@@ -56,7 +56,7 @@
         <div class="img_text">
           <p class="font_myfont">Unique & Custom Designs</p>
           <p>
-            At Boxed Wedding Invitations, creativity knows no bounds! If you can
+            At EL design Wedding Invitations, creativity knows no bounds! If you can
             dream it, we can bring it to life. Each design is custom-tailored to
             your unique style and vision, blending sophistication and timeless
             elegance to create invitations that leave a lasting impression on
@@ -100,7 +100,7 @@
         <div class="descript_two">
           <span class="font_myfont">Never run out of stationery ideas</span>
           <p class="descript_text">
-            At <strong>Wedding Invitations</strong>, we offer custom-designed
+            At <strong>EL design Wedding Invitations</strong>, we offer custom-designed
             invitations for any event, featuring an extensive selection of
             stunning, one-of-a-kind designs to choose from. Personalize your
             invitations by selecting custom colors, elegant fonts, and unique
@@ -214,7 +214,7 @@ export default {
       }
       p {
         text-align: center;
-        color: #fff;
+        color: #bbaeae;
       }
     }
   }
