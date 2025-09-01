@@ -9,6 +9,11 @@
   font-size: 30px;
   font-weight: 600;
 }
+.font_myfont_protitle {
+  font-family: 'myfont_protitle';
+  font-size: 30px;
+  font-weight: 400;
+}
 .content-box {
   width: 1600px;
   margin: 0 auto;

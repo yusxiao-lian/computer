@@ -11,3 +11,10 @@
   font-weight: normal;  
   font-style: normal;  
 }
+
+@font-face {  
+  font-family: 'myfont_protitle';
+  src: url('Basteleur-Moonlight.ttf'); 
+  font-weight: normal;  
+  font-style: normal;  
+}

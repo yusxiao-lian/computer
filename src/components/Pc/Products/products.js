@@ -1,3 +1,4 @@
+// 盒子
 let boxProducts = [
   {
     imgUrl: require('@/assets/img/mainProduct/pro_one.jpg'),
@@ -96,6 +97,23 @@ let boxProducts = [
     ]
   },
 ]
-export function productList () {
-    return boxProducts;
+// 亚克力
+let acrylic = []
+
+let Hardcover = []
+let Letterpress = []
+let Luxury = []
+export function productList (value) {
+    if(value==1) {
+        return acrylic;
+    } else if(value==3) {
+        return boxProducts;
+    } else if(value==2) {
+        return Hardcover;
+    } else if(value==4) {
+        return Letterpress;
+    } else if(value==5) {
+        return Luxury;
+    }
+    return acrylic;
 };

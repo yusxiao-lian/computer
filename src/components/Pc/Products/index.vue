@@ -11,6 +11,7 @@
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
+        @select="handleSelect"
       >
         <el-menu-item index="1">
           <span slot="title">Acrylic invitation</span>
@@ -46,7 +47,7 @@
         <div class="products_imgs">
           <div v-for="(item, index) in productLists" :key="item.imgUrl">
               <img
-              @click="toDetail(item.childrens)"
+              @click="toDetail(item)"
               :src="item.imgUrl"
               alt=""
             />
@@ -66,7 +67,7 @@ export default {
     };
   },
   created() {
-    this.productLists = productList() || []
+    this.productLists = productList(1) || []
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -90,6 +91,9 @@ export default {
         this.$refs.menu.style.top = "500px";
       }
     },
+    handleSelect(index) {
+      this.productLists = productList(index) || []
+    }
   },
 };
 </script>
