@@ -2,6 +2,13 @@ const path = require("path");
 const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
     publicPath: "./",
+    // 开发服务器配置，允许手机访问
+    devServer: {
+        host: '0.0.0.0', // 允许外部设备访问
+        port: 8081, // 设置开发服务器端口
+        disableHostCheck: true, // 禁用主机检查，允许手机访问
+        compress: true // 启用gzip压缩，提升加载速度
+    },
     configureWebpack: {
         resolve: {
         alias: {
