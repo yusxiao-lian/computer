@@ -6,7 +6,7 @@
     </div>
     <div class="menu" ref="menu">
       <el-menu
-        default-active="1"
+        :default-active="active"
         class="el-menu-vertical-demo"
         background-color="#545c64"
         text-color="#fff"
@@ -56,18 +56,28 @@
         </div>
       </div>
     </div>
+    <Bottom />
   </div>
 </template>
 <script>
 import { productList } from "./products.js";
+import Bottom from "../../common/bottom.vue";
+
 export default {
   data() {
     return {
       productLists: [],
+      active: "1"
     };
   },
+  components: {
+    Bottom
+  },
   created() {
-    this.productLists = productList(1) || []
+    // 检查路由查询参数中是否有type
+    const type = this.$route.query.type || "1";
+    this.active = type;
+    this.productLists = productList(type) || [];
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);

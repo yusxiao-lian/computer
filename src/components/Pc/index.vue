@@ -21,6 +21,9 @@ export default {
         }
     },
     mounted() {
+        this.$bus.$on("toMenu",(index)=>{
+            this.activeIndex = index;
+        })
         this.$router.push("/Home")
          this.$bus.$on("toProduct",()=>{
             this.$router.replace("/Products")
