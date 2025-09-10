@@ -18,7 +18,12 @@
       <div class="img_desc">
         <h2 class="font_myfont_protitle">{{ productName }}</h2>
         <div class="desc_content">
-            <p>adsadassdada adsadassdadaadsadassda daadsadassdadaadsadassdadaadsa dassdadaads adassdadaadsadassdad aadsadassdadaad sadassdadaadsadas sdadaadsadassdadaads</p>
+            <div class="desc_top">{{ currentDesc.detail_desc }}</div>
+            <div class="desc_center">This suite includes: </div>
+            <div class="desc_bottom" v-for="item in  currentDesc.detail_descItem">
+                <span class="desc_bottom_rice"></span>
+                <span>{{  item }}</span>
+            </div>
         </div>
       </div>
     </div>
@@ -31,7 +36,27 @@ export default {
             productName: '',
             proChildrens: [],
             currentIndex: 0,
-            currentImg: ''
+            currentImg: '',
+            boxDesc: {
+                detail_desc: "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
+                detail_descItem: [
+                    "1 main suede box foil logo(color & logo can be customized)",
+                    "1 customized shape acrylic with foil/printing",
+                    "Any additional cards are accepted Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+                ],
+            }
+        }
+    },
+    computed: {
+        currentDesc() {
+            let current = JSON.parse(localStorage.getItem("currentItemMenu"))
+            if(current==3) {
+                return this.boxDesc
+            }
+            return {
+                detail_desc: "11",
+                detail_descItem: []
+            }
         }
     },
     created() {
@@ -96,10 +121,25 @@ export default {
         .price {
             font-size: 22px;
         }
+        .desc_center {
+                margin: 20px 0 20px 0;
+                font-size: 20px;
+        }
+        .desc_top {
+            font-size: 20px;
+        }
+        .desc_bottom {
+            .desc_bottom_rice {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: rgb(77, 140, 221);
+                margin: 0 4px 2px 0;
+            }
+        }
     }
     .desc_content p {
-        margin: 0;
-        padding: 0;
         font-size: 20px;
     }
 }
@@ -117,6 +157,7 @@ export default {
         .desc_content {
             width: 340px;
         }
+        
     }
     
  }

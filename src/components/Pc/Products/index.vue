@@ -92,7 +92,8 @@ export default {
       }
     },
     handleSelect(index) {
-      this.productLists = productList(index) || []
+      this.productLists = productList(index) || [];
+      localStorage.setItem("currentItemMenu", JSON.stringify(index))
     }
   },
 };

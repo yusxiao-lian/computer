@@ -10,7 +10,7 @@
     </div>
     <div class="about_ours">
       <span
-        >Welcome to EL Design wedidng invitations showroom and admire our giant
+        >Welcome to EL Design wedding  invitations showroom and admire our giant
         range of meticulously crafted wedding invitations, spanning over a
         6years of depicting beautiful love stories by stylishly combining art,
         tactile papers, materials and the best of modern and traditional print
@@ -114,16 +114,19 @@
     <div class="home_bottom">
       <p>With the freedom to choose your colors, personalize every detail, and craft your wording, your wedding invitations will be a true reflection of your love story. We're here to make your wedding dreams come true with our dedication to customization and personalization.</p>
     </div>
+    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
 import Carousel from "../Carousel/index.vue";
+import Bottom from "../../common/bottom.vue";
 
 export default {
   name: "home",
   components: {
     Carousel,
+    Bottom
   },
   data() {
     return {};
