@@ -53,10 +53,35 @@ let router = new VueRouter({
          // h5
         {
             name: "hfiveIndex",
-            path: "hfiveIndex",
-            component: hfiveIndex,
-            meta: { title: "Index" },
-            children: []
+            path: "/",
+            component: Index,
+            meta: { title: "Invitations" },
+            children: [
+                {
+                    name: "HFiveHome",
+                    path: "/HFiveHome",
+                    component: ()=>import("@/components/Hfive/Home/index.vue"),
+                    meta: { title: "Invitations" },
+                },
+                {
+                    name: "HFiveProducts",
+                    path: "/HFiveProducts",
+                    component: ()=>import("@/components/Hfive/Products/index.vue"),
+                    meta: { title: "Invitations" },
+                },
+                {
+                    name: "HFiveDetail",
+                    path: "/HFiveDetail",
+                    component: ()=>import("@/components/Hfive/Products/detail.vue"),
+                    meta: { title: "Invitations" },
+                },
+                {
+                    name: "HFiveContact",
+                    path: "/HFiveContact",
+                    component: ()=>import("@/components/Hfive/Contact/index.vue"),
+                    meta: { title: "Contact" },
+                },
+            ]
         },
     ]
 })

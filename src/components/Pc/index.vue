@@ -58,7 +58,7 @@ export default {
     }
 }
 .content_main {
-    padding-top: 62px;
+    padding-top: 86px;
 }
 
 </style>
