@@ -56,7 +56,7 @@ export default {
     .menu-box {
         display: flex;
         align-items: center;
-        // background-color: #ccc;
+        padding: 8px 0 8px 12px;
           background-color: rgb(248, 244, 246);
         .logo {
             width: 80px;
