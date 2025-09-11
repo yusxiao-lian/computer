@@ -25,15 +25,14 @@ export default {
             this.activeIndex = index;
         })
         this.$router.push("/Home")
-         this.$bus.$on("toProduct",()=>{
+        this.$bus.$on("toProduct",()=>{
             this.$router.replace("/Products")
             this.activeIndex = "/Products"
-         })
+        })
     },
     methods: {
         menuSelect(index) {
             this.activeIndex = index;
-            console.log(index, "indexindex")
             this.$router.push(index)
         }
     }

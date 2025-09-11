@@ -12,6 +12,19 @@ import router from '@/router/index.js'
 
 Vue.config.productionTip = false;
 
+// 处理重复导航错误
+const originalPush = router.push;
+router.push = function push(location) {
+  return originalPush.call(this, location).catch(err => {
+    // 忽略NavigationDuplicated错误
+    if (err.name === 'NavigationDuplicated') {
+      return Promise.resolve(err);
+    }
+    // 抛出其他类型的错误
+    return Promise.reject(err);
+  })
+}
+
 router.beforeEach((to, from, next) => {
   document.title = (to.meta.title || "Invitations");
   next();
