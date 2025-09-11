@@ -10,14 +10,14 @@
     </div>
     <div class="about_ours">
       <span
-        >Welcome to EL Design wedding  invitations showroom and admire our giant
+        >Welcome to <strong>EL Design wedding invitations</strong> showroom and admire our giant
         range of meticulously crafted wedding invitations, spanning over a
         6years of depicting beautiful love stories by stylishly combining art,
         tactile papers, materials and the best of modern and traditional print
         applications. We can mix and match elements of designs, combine papers,
         stocks, and embellishments and tailor your wedding invites to your
         heart’s content until you are totally satisfied. Let us create
-        completely unique and customized wedding invitation cards that will
+        completely unique and <strong>customized wedding invitation cards</strong> that will
         become the perfect depiction for your special day to come, and remain a
         beautiful memory to be treasured for years</span
       >

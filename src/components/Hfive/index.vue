@@ -52,6 +52,8 @@ export default {
 </script>
 <style lang="less" scoped>
 .content-box {
+    overflow-y: auto;
+    padding-bottom: 20px;
     .menu-box {
         .logo {
             width: 80px;
