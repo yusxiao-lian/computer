@@ -54,6 +54,7 @@ export default {
 .content-box {
     overflow-y: auto;
     padding-bottom: 20px;
+    background-color: #fff;
     .menu-box {
         .logo {
             width: 80px;

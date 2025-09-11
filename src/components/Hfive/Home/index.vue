@@ -61,8 +61,22 @@
     </div>
     <div class="video_box">
       <div class="video_v">
-        <video width="100%" autoplay muted playsinline loop>
+        <video
+          width="100%"
+          autoplay
+          muted
+          playsinline
+          loop
+          preload="auto"
+          webkit-playsinline
+          x5-playsinline
+          x5-video-player-type="h5"
+          x5-video-player-fullscreen="false"
+          x5-video-orientation="portraint"
+          style="object-fit: cover; background: black"
+        >
           <source :src="video_1" type="video/mp4" />
+          您的浏览器不支持视频播放
         </video>
       </div>
     </div>
@@ -81,6 +95,34 @@
         </div>
       </div>
     </div>
+    <div class="materials">
+      <div class="title">
+        <span>MATERIALS & CRAFT</span>
+      </div>
+      <div class="content">
+        <img style="margin: 0 0 15px 0" :src="craft_1" alt="" />
+        <img style="margin: 0 0 15px 0" :src="craft_2" alt="" />
+        <img style="margin: 0 0 15px 0" :src="craft_3" alt="" />
+        <img style="margin: 0 0 15px 0" :src="craft_4" alt="" />
+      </div>
+    </div>
+    <div class="about_invitations">
+      <div class="descript_two">
+        <span class="font_myfont">Never run out of stationery ideas</span>
+        <p class="descript_text">
+          At <strong>EL design Wedding Invitations</strong>, we offer
+          custom-designed invitations for any event, featuring an extensive
+          selection of stunning, one-of-a-kind designs to choose from.
+          Personalize your invitations by selecting custom colors, elegant
+          fonts, and unique die-cut shapes for both invitations and envelopes.
+          Bring your vision to life with our bespoke invitation designs that
+          leave a lasting impression. Start customizing today!
+        </p>
+      </div>
+    </div>
+    <div class="about_invitations">
+      <img style="width: 100%; height: 550px" :src="home_3" alt="" />
+    </div>
   </div>
 </template>
 <script>
@@ -93,6 +135,11 @@ import banner_5 from "@/assets/img/banner/banner_5.jpg";
 import banner_6 from "@/assets/img/banner/banner_6.jpg";
 import video_1 from "@/assets/video/video_1.mp4";
 import home_2 from "@/assets/img/home/home_2.jpg";
+import craft_1 from "@/assets/img/home/craft_1.jpg";
+import craft_2 from "@/assets/img/home/craft_2.jpg";
+import craft_3 from "@/assets/img/home/craft_3.jpg";
+import craft_4 from "@/assets/img/home/craft_4.jpg";
+import home_3 from "@/assets/img/home/home_3.jpg";
 
 export default {
   data() {
@@ -119,11 +166,83 @@ export default {
       ],
       video_1: video_1,
       home_2: home_2,
+      craft_1: craft_1,
+      craft_2: craft_2,
+      craft_3: craft_3,
+      craft_4: craft_4,
+      home_3: home_3,
     };
   },
   components: {
     "van-swipe": Swipe,
     "van-swipe-item": SwipeItem,
+  },
+  mounted() {
+    // 改进的视频自动播放逻辑
+    const videoElement = document.querySelector("video");
+    if (videoElement) {
+      // 确保视频已加载元数据
+      videoElement.addEventListener("loadedmetadata", () => {
+        this.attemptVideoPlay(videoElement);
+      });
+
+      // 添加视频容器的点击事件，提高用户交互触发率
+      const videoContainer = document.querySelector(".video_v");
+      if (videoContainer) {
+        videoContainer.style.cursor = "pointer";
+        const handleContainerClick = () => {
+          videoElement.play();
+          videoContainer.removeEventListener("click", handleContainerClick);
+          videoContainer.removeEventListener(
+            "touchstart",
+            handleContainerClick
+          );
+        };
+        videoContainer.addEventListener("click", handleContainerClick);
+        videoContainer.addEventListener("touchstart", handleContainerClick);
+      }
+
+      // 立即尝试播放，处理已缓存的视频
+      this.attemptVideoPlay(videoElement);
+    }
+  },
+  methods: {
+    attemptVideoPlay(videoElement) {
+      // 移动设备自动播放策略
+      videoElement.play().catch((error) => {
+        console.log("自动播放失败，需要用户交互:", error);
+
+        // 添加全局点击和触摸事件监听
+        const handleUserInteraction = () => {
+          // 再次尝试播放
+          videoElement
+            .play()
+            .then(() => {
+              console.log("用户交互后视频播放成功");
+            })
+            .catch((err) => {
+              console.error("用户交互后播放仍失败:", err);
+            });
+
+          // 移除事件监听器
+          document.removeEventListener("click", handleUserInteraction);
+          document.removeEventListener("touchstart", handleUserInteraction);
+          document.removeEventListener("scroll", handleUserInteraction);
+        };
+
+        // 添加多种用户交互事件，提高触发几率
+        document.addEventListener("click", handleUserInteraction);
+        document.addEventListener("touchstart", handleUserInteraction);
+        document.addEventListener("scroll", handleUserInteraction);
+
+        // 设置超时移除监听器，避免内存泄漏
+        setTimeout(() => {
+          document.removeEventListener("click", handleUserInteraction);
+          document.removeEventListener("touchstart", handleUserInteraction);
+          document.removeEventListener("scroll", handleUserInteraction);
+        }, 30000); // 30秒后移除
+      });
+    },
   },
 };
 </script>
@@ -178,7 +297,7 @@ export default {
         line-height: 28px;
       }
       .font_myfont {
-        font-size: 28px;
+        font-size: 32px;
       }
     }
   }
@@ -190,13 +309,17 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      width: 100%;
       img {
         width: 100%;
         height: 450px;
+        object-fit: cover;
       }
       video {
         width: 100%;
-        height: 500px;
+        height: 300px;
+        object-fit: cover;
       }
     }
     .video_img {
@@ -213,6 +336,63 @@ export default {
           text-align: center;
           color: #bbaeae;
         }
+      }
+    }
+  }
+  .materials {
+    padding: 0 15px;
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      margin-bottom: 30px;
+      font-size: 24px;
+
+      span {
+        display: inline-block;
+        color: #fff;
+        background-color: black;
+        padding: 5px 20px;
+        border-radius: 17px;
+      }
+    }
+    .cursor_title {
+      cursor: pointer;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 100%;
+        height: 550px;
+      }
+    }
+  }
+  .about_invitations {
+    margin: 20px 0 20px 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .font_myfont {
+        font-size: 32px;
+      }
+    .descript {
+      width: 100%;
+      padding-right: 15px;
+      .descript_text {
+        font-size: 1.3em;
+        line-height: 28px;
+      }
+    }
+    .descript_two {
+      width: 100%;
+      .descript_text {
+        font-size: 1.3em;
+        line-height: 28px;
       }
     }
   }
