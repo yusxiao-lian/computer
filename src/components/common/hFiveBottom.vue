@@ -13,8 +13,8 @@
      <div class="contact">
             <div class="gmail">contant us: ellafff001@gmail.com</div>
             <div>
-                <a href="https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/" target="_blank" class="myfont_3"><i class="el-icon-thumb"></i>f</a>
-                <a href="https://www.instagram.com/eldesignweddinginvitation/" target="_blank" class="myfont_3 Instagram"><i class="el-icon-thumb"></i>ins</a>
+                <a href="https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/" class="myfont_3" @click="handleSocialClick($event, 'https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/')"><i class="el-icon-thumb"></i>f</a>
+                <a href="https://www.instagram.com/eldesignweddinginvitation/" class="myfont_3 Instagram" @click="handleSocialClick($event, 'https://www.instagram.com/eldesignweddinginvitation/')"><i class="el-icon-thumb"></i>ins</a>
             </div>
         </div>
   </div>
@@ -35,11 +35,9 @@ export default {
       })
       this.$bus.$emit("toHfiveMenu", "/HFiveProducts");
     },
-     toHfiveFacebook() {
-        window.open("https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/");
-    },
-    toHfiveInstagram() {
-        window.open("https://www.instagram.com/eldesignweddinginvitation/");
+    handleSocialClick(event, url) {
+      event.preventDefault();
+      window.open(url, '_blank');
     },
   }
 }
@@ -48,7 +46,7 @@ export default {
 @import "../../common/font/font.css";
 
 .bottom {
-  margin-top: 110px;
+  margin-top: 10px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   p {
