@@ -40,6 +40,7 @@
 import { Icon, Button, Popup } from "vant";
 import top_img from "@/assets/img/home/product_top.jpg";
 import { productList } from "@/common/js/products.js";
+
 export default {
   data() {
     return {
