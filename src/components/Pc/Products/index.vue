@@ -60,7 +60,7 @@
   </div>
 </template>
 <script>
-import { productList } from "./products.js";
+import { productList } from "@/common/js/products.js";
 import Bottom from "../../common/bottom.vue";
 
 export default {
@@ -95,10 +95,10 @@ export default {
     handleScroll() {
       const menuRect = this.$refs.top_img.getBoundingClientRect();
       if (menuRect.top < -10 && menuRect.top > -420) {
-        this.$refs.menu.style.top = 500 + menuRect.top + "px";
+        this.$refs.menu.style.top = 520 + menuRect.top + "px";
       }
       if (menuRect.top > 78) {
-        this.$refs.menu.style.top = "500px";
+        this.$refs.menu.style.top = "520px";
       }
     },
     handleSelect(index) {
@@ -137,7 +137,7 @@ export default {
 }
 .menu {
   position: fixed;
-  top: 500px;
+  top: 520px;
 }
 .product_list {
   width: calc(100% - 200px);
