@@ -123,10 +123,31 @@
     <div class="about_invitations">
       <img style="width: 100%; height: 550px" :src="home_3" alt="" />
     </div>
+    <div class="materials">
+      <div class="title">
+        <span>MORE FROME US</span>
+      </div>
+      <div class="content-more">
+        <div v-for="(item, index) in moreList">
+          <img :src="item.image" alt="" />
+          <div class="more-text">{{ item.text }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="home_bottom">
+      <p>
+        With the freedom to choose your colors, personalize every detail, and
+        craft your wording, your wedding invitations will be a true reflection
+        of your love story. We're here to make your wedding dreams come true
+        with our dedication to customization and personalization.
+      </p>
+    </div>
+    <hFiveBottom />
   </div>
 </template>
 <script>
 import { Swipe, SwipeItem } from "vant";
+import hFiveBottom from "@/components/common/hFiveBottom.vue";
 import banner_1 from "@/assets/img/banner/banner_1.jpg";
 import banner_2 from "@/assets/img/banner/banner_2.jpg";
 import banner_3 from "@/assets/img/banner/banner_3.jpg";
@@ -140,6 +161,11 @@ import craft_2 from "@/assets/img/home/craft_2.jpg";
 import craft_3 from "@/assets/img/home/craft_3.jpg";
 import craft_4 from "@/assets/img/home/craft_4.jpg";
 import home_3 from "@/assets/img/home/home_3.jpg";
+import more_1 from "@/assets/img/mainProduct/pro_detail_2.jpg";
+import more_2 from "@/assets/img/mainProduct/pro_detail_2.jpg";
+import more_3 from "@/assets/img/mainProduct/pro_detail_2.jpg";
+import more_4 from "@/assets/img/mainProduct/pro_detail_2.jpg";
+import more_5 from "@/assets/img/mainProduct/pro_detail_2.jpg";
 
 export default {
   data() {
@@ -171,11 +197,34 @@ export default {
       craft_3: craft_3,
       craft_4: craft_4,
       home_3: home_3,
+      moreList: [
+        {
+          image: more_1,
+          text: "Acrylic",
+        },
+        {
+          image: more_2,
+          text: "Hardcover",
+        },
+        {
+          image: more_3,
+          text: "Box",
+        },
+        {
+          image: more_4,
+          text: "Letterpress",
+        },
+        {
+          image: more_5,
+          text: "Luxury",
+        },
+      ],
     };
   },
   components: {
     "van-swipe": Swipe,
     "van-swipe-item": SwipeItem,
+    hFiveBottom
   },
   mounted() {
     // 改进的视频自动播放逻辑
@@ -369,6 +418,40 @@ export default {
         height: 550px;
       }
     }
+    .content-more {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: flex;
+      justify-content: start;
+      flex-wrap: nowrap;
+      padding: 0 0 15px 0;
+      .more-text {
+        text-align: center;
+        padding: 5px 0;
+        font-size: 14px;
+      }
+      img {
+        width: 220px !important;
+        height: 280px !important;
+        margin-right: 15px;
+        flex-shrink: 0; /* 防止图片在flex容器中被压缩 */
+      }
+      // 自定义滚动条样式，提高用户体验
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 3px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 3px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #ccc;
+      }
+    }
   }
   .about_invitations {
     margin: 20px 0 20px 0;
@@ -378,8 +461,8 @@ export default {
     align-items: center;
     text-align: center;
     .font_myfont {
-        font-size: 32px;
-      }
+      font-size: 32px;
+    }
     .descript {
       width: 100%;
       padding-right: 15px;
@@ -394,6 +477,18 @@ export default {
         font-size: 1.3em;
         line-height: 28px;
       }
+    }
+  }
+  .home_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
+    p {
+      font-size: 20px;
+      text-align: center;
     }
   }
 }

@@ -6,9 +6,9 @@
         </div>
         <div>
             <van-tabbar v-model="active" fixed safe-area-inset-bottom	>
-                <van-tabbar-item name="home" @click="toHome" icon="home-o">HOME</van-tabbar-item>
-                <van-tabbar-item name="search" @click="toInvitions" icon="gift-card-o">INVITATIONS</van-tabbar-item>
-                <van-tabbar-item name="friends" @click="toContact" icon="phone-circle-o">COMTACT US</van-tabbar-item>
+                <van-tabbar-item name="/HFiveHome" @click="toHome" icon="home-o">HOME</van-tabbar-item>
+                <van-tabbar-item name="/HFiveProducts" @click="toInvitions" icon="gift-card-o">INVITATIONS</van-tabbar-item>
+                <van-tabbar-item name="/HFiveContact" @click="toContact" icon="phone-circle-o">COMTACT US</van-tabbar-item>
             </van-tabbar>
         </div>
     </div>
@@ -33,7 +33,7 @@ export default {
     },
     mounted() {
         this.$router.push("/HFiveHome")
-        this.$bus.$on("toMenu",(index)=>{
+        this.$bus.$on("toHfiveMenu",(index)=>{
             this.active = index;
         })
     },
