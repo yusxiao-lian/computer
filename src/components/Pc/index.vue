@@ -20,6 +20,16 @@ export default {
             activeIndex: "/Home"
         }
     },
+    watch: {
+        $route(to, from) {
+            if(to.path == "/") {
+                this.$router.push("/Home")
+                this.activeIndex = "/Home"
+            } else {
+                this.activeIndex = to.path
+            }
+        }
+    },
     mounted() {
         this.$bus.$on("toMenu",(index)=>{
             this.activeIndex = index;

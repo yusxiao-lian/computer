@@ -26,9 +26,19 @@ export default {
         VanTabbar: Tabbar,
         VanTabbarItem: TabbarItem
     },
+    watch: {
+        $route(to, from) {
+            if(to.path == "/") {
+                this.$router.push("/HFiveHome")
+                this.active = '/HFiveHome'
+            } else {
+                this.active = to.path
+            }
+        }
+    },
     data () {
         return {
-            active: 'home'
+            active: '/HFiveHome'
         }
     },
     mounted() {
