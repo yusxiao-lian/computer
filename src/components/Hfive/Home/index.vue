@@ -7,7 +7,7 @@
     <div>
       <van-swipe
         class="my-swipe"
-        :height="200"
+        :height="260"
         :autoplay="3000"
         indicator-color="white"
       >

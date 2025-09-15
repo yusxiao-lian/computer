@@ -1,6 +1,7 @@
 // 盒子
 let boxProducts = [
   {
+    type: "3",
     imgUrl: require('@/assets/img/mainProduct/pro_one.jpg'),
     desc: 'Luxury suede/velvet box with customized gold mirror acrylic card invitation',
     childrens: [
@@ -25,6 +26,7 @@ let boxProducts = [
     ]
   },
   {
+    type: "3",
     imgUrl: require('@/assets/img/mainProduct/pro_two.jpg'),
     desc: 'Dark green suede box invitation gold foil clear acrylic wedding invitation card',
     childrens: [
@@ -49,6 +51,7 @@ let boxProducts = [
     ]
   },
   {
+    type: "3",
     imgUrl: require('@/assets/img/mainProduct/pro_three.jpg'),
     desc: 'Baby pink velvet hardcover box with creative shape acrylic invitation card',
     childrens: [
@@ -73,6 +76,7 @@ let boxProducts = [
     ]
   },
   {
+    type: "3",
     imgUrl: require('@/assets/img/mainProduct/pro_four.jpg'),
     desc: 'Creative shape cleae acrylic invitations with ivory suede foiling logo box ',
     childrens: [
@@ -99,10 +103,13 @@ let boxProducts = [
 ]
 // 亚克力
 let acrylic = []
-
+// 灰板
 let Hardcover = []
+// 信封
 let Letterpress = []
 let Luxury = []
+
+
 export function productList (value) {
     if(value==1) {
         return acrylic;
