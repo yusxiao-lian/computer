@@ -4,7 +4,10 @@
       <img class="logo" src="@/assets/img/home/logo.png" alt="" />
       <div class="menu-button">
         <van-icon name="list-switch" />
-        <span @click="filterClick">Filter</span>
+        <span @click="filterClick">
+          Filter
+          <span v-show="activeFilterName">(1)</span>
+        </span>
       </div>
     </div>
     <div class="product-conent">
@@ -32,6 +35,15 @@
               <p>{{ item.desc }}</p>
             </div>
           </div>
+          <van-pagination @change="pageChange" v-model="currentPage" :total-items="showProductList.length">
+            <template #prev-text>
+              <van-icon name="arrow-left" />
+            </template>
+            <template #next-text>
+              <van-icon name="arrow" />
+            </template>
+            <template #page="{ text }">{{ text }}</template>
+          </van-pagination>
         </div>
       </div>
     </div>
@@ -45,7 +57,16 @@
         height: '100%',
       }"
     >
+      <div class="filter-title">
+        Filter
+        <span v-show="activeFilterName">(1)</span>
+      </div>
+      <div v-show="activeFilterName" class="filter-name">
+        <span>{{ activeFilterName }}</span>
+        <span @click="clearFilter"><van-icon name="close" /></span>
+      </div>
       <div class="popup-content">
+        
         <div @click="handleSelect(1)" class="popup-item">
           Acrylic invitation
         </div>
@@ -65,12 +86,15 @@ import { Icon, Button, Popup } from "vant";
 import top_img from "@/assets/img/home/product_top.jpg";
 import { productList } from "@/common/js/products.js";
 import hFiveBottom from "@/components/common/hFiveBottom.vue";
+import { Pagination } from 'vant';
 
 export default {
   data() {
     return {
+      currentPage: 1,
       popupShow: false,
       top_img: top_img,
+      activeFilterName: "",
       allProducts: [], //全部产品
 
       showProductList: [], //展示产品
@@ -86,6 +110,7 @@ export default {
     [Icon.name]: Icon,
     [Button.name]: Button,
     [Popup.name]: Popup,
+    [Pagination.name]: Pagination,
     hFiveBottom
   },
   created() {
@@ -101,22 +126,64 @@ export default {
       ...this.letterpressList,
       ...this.luxuryList,
     ];
-    this.showProductList = this.allProducts.slice(0, 20);
+    let currentItemMenu =JSON.parse( localStorage.getItem("currentItemMenu"))
+    if(!currentItemMenu){
+      this.showProductList = this.allProducts.slice(0, 20);
+    } else if(currentItemMenu == 1){
+      this.showProductList = this.acrylicList.slice(0, 20);
+      this.activeFilterName = "Acrylic";
+    } else if(currentItemMenu == 2){
+      this.showProductList = this.hardcoverList.slice(0, 20);
+      this.activeFilterName = "Hardcover";
+    } else if(currentItemMenu == 3){
+      this.showProductList = this.boxtList.slice(0, 20);
+      this.activeFilterName = "Box";
+    } else if(currentItemMenu == 4){
+      this.showProductList = this.letterpressList.slice(0, 20);
+      this.activeFilterName = "Letterpress";
+    } else if(currentItemMenu == 5){
+      this.activeFilterName = "Luxury";
+      this.showProductList = this.luxuryList.slice(0, 20);
+    }
   },
   methods: {
     filterClick() {
       this.popupShow = true;
     },
     handleSelect(index) {
+      this.currentPage = 1;
       this.showProductList = productList(index).slice(0, 20) || [];
       localStorage.setItem("currentItemMenu", JSON.stringify(index))
       this.popupShow = false;
+      this.activeFilterName = index == 1 ? "Acrylic" : index == 2 ? "Hardcover" : index == 3 ? "Box" : index == 4 ? "Letterpress" : "Luxury";
     },
     toDetail(childrens) {
       localStorage.setItem("proChildrens", JSON.stringify(childrens))
       this.$router.push({
         path: "/HFiveDetail",
       });
+    },
+    clearFilter() {
+      this.showProductList = this.allProducts.slice(0, 20);
+      this.activeFilterName = "";
+      this.popupShow = false;
+    },
+    pageChange(page) {
+      this.currentPage = page;
+      let currentItemMenu =JSON.parse( localStorage.getItem("currentItemMenu"))
+      if(currentItemMenu == 1){
+        this.showProductList = this.acrylicList.slice((page - 1) * 20, page * 20);
+      } else if(currentItemMenu == 2){
+        this.showProductList = this.hardcoverList.slice((page - 1) * 20, page * 20);
+      } else if(currentItemMenu == 3){
+        this.showProductList = this.boxtList.slice((page - 1) * 20, page * 20);
+      } else if(currentItemMenu == 4){
+        this.showProductList = this.letterpressList.slice((page - 1) * 20, page * 20);
+      } else if(currentItemMenu == 5){
+        this.showProductList = this.luxuryList.slice((page - 1) * 20, page * 20);
+      } else {
+        this.showProductList = this.allProducts.slice((page - 1) * 20, page * 20);
+      }
     },
   },
 };
@@ -211,6 +278,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 10px;
         div:nth-child(2n+1) {
           padding: 20px 0 0 0;
           margin: 0 25px 20px 0;
@@ -229,6 +297,21 @@ export default {
         }
       }
     }
+  }
+  .filter-title {
+    padding: 20px 0 15px 15px;
+    font-size: 24px;
+    border-bottom: 1px solid #e6e6d9;
+  }
+  .filter-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
   }
 }
 </style>
