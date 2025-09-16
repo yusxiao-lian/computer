@@ -49,14 +49,14 @@ export default {
     },
     methods: {
         toHome() {
-            localStorage.clear("currentItemMenu")
+            localStorage.removeItem("currentItemMenu")
             this.$router.push("/HFiveHome")
         },
         toInvitions() {
             this.$router.push("/HFiveProducts")
         },
         toContact() {
-            localStorage.clear("currentItemMenu")
+            localStorage.removeItem("currentItemMenu")
             this.$router.push("/HFiveContact")
         }
     }

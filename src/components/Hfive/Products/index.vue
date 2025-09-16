@@ -35,7 +35,7 @@
               <p>{{ item.desc }}</p>
             </div>
           </div>
-          <van-pagination @change="pageChange" v-model="currentPage" :total-items="showProductList.length">
+          <van-pagination @change="pageChange" :items-per-page="showNumber" v-model="currentPage"  :total-items="pageLength">
             <template #prev-text>
               <van-icon name="arrow-left" />
             </template>
@@ -95,8 +95,9 @@ export default {
       popupShow: false,
       top_img: top_img,
       activeFilterName: "",
+      pageLength: 0,
+      showNumber: 4,
       allProducts: [], //全部产品
-
       showProductList: [], //展示产品
       // 分类
       acrylicList: [],
@@ -126,24 +127,30 @@ export default {
       ...this.letterpressList,
       ...this.luxuryList,
     ];
+    this.pageLength = this.allProducts.length;
     let currentItemMenu =JSON.parse( localStorage.getItem("currentItemMenu"))
     if(!currentItemMenu){
-      this.showProductList = this.allProducts.slice(0, 20);
+      this.showProductList = this.allProducts.slice(0, this.showNumber);
     } else if(currentItemMenu == 1){
-      this.showProductList = this.acrylicList.slice(0, 20);
+      this.showProductList = this.acrylicList.slice(0, this.showNumber);
       this.activeFilterName = "Acrylic";
+      this.pageLength = this.acrylicList.length;
     } else if(currentItemMenu == 2){
-      this.showProductList = this.hardcoverList.slice(0, 20);
+      this.showProductList = this.hardcoverList.slice(0, this.showNumber);
       this.activeFilterName = "Hardcover";
+      this.pageLength = this.hardcoverList.length;
     } else if(currentItemMenu == 3){
-      this.showProductList = this.boxtList.slice(0, 20);
+      this.showProductList = this.boxtList.slice(0, this.showNumber);
       this.activeFilterName = "Box";
+      this.pageLength = this.boxtList.length;
     } else if(currentItemMenu == 4){
-      this.showProductList = this.letterpressList.slice(0, 20);
+      this.showProductList = this.letterpressList.slice(0, this.showNumber);
       this.activeFilterName = "Letterpress";
+      this.pageLength = this.letterpressList.length;
     } else if(currentItemMenu == 5){
       this.activeFilterName = "Luxury";
-      this.showProductList = this.luxuryList.slice(0, 20);
+      this.showProductList = this.luxuryList.slice(0, this.showNumber);
+      this.pageLength = this.luxuryList.length;
     }
   },
   methods: {
@@ -152,8 +159,9 @@ export default {
     },
     handleSelect(index) {
       this.currentPage = 1;
-      this.showProductList = productList(index).slice(0, 20) || [];
       localStorage.setItem("currentItemMenu", JSON.stringify(index))
+      this.showProductList = productList(index).slice(0, this.showNumber) || [];
+      this.pageLength = productList(index).length;
       this.popupShow = false;
       this.activeFilterName = index == 1 ? "Acrylic" : index == 2 ? "Hardcover" : index == 3 ? "Box" : index == 4 ? "Letterpress" : "Luxury";
     },
@@ -164,26 +172,30 @@ export default {
       });
     },
     clearFilter() {
-      this.showProductList = this.allProducts.slice(0, 20);
+      localStorage.removeItem("currentItemMenu");
+      this.currentPage = 1;
+      this.showProductList = this.allProducts.slice(0, this.showNumber);
       this.activeFilterName = "";
       this.popupShow = false;
+      this.pageLength = this.allProducts.length;
     },
     pageChange(page) {
       this.currentPage = page;
-      let currentItemMenu =JSON.parse( localStorage.getItem("currentItemMenu"))
+      let currentItemMenu =JSON.parse(localStorage.getItem("currentItemMenu"))
       if(currentItemMenu == 1){
-        this.showProductList = this.acrylicList.slice((page - 1) * 20, page * 20);
+        this.showProductList = this.acrylicList.slice((page - 1) * this.showNumber, page * this.showNumber);
       } else if(currentItemMenu == 2){
-        this.showProductList = this.hardcoverList.slice((page - 1) * 20, page * 20);
+        this.showProductList = this.hardcoverList.slice((page - 1) * this.showNumber, page * this.showNumber);
       } else if(currentItemMenu == 3){
-        this.showProductList = this.boxtList.slice((page - 1) * 20, page * 20);
+        this.showProductList = this.boxtList.slice((page - 1) * this.showNumber, page * this.showNumber);
       } else if(currentItemMenu == 4){
-        this.showProductList = this.letterpressList.slice((page - 1) * 20, page * 20);
+        this.showProductList = this.letterpressList.slice((page - 1) * this.showNumber, page * this.showNumber);
       } else if(currentItemMenu == 5){
-        this.showProductList = this.luxuryList.slice((page - 1) * 20, page * 20);
+        this.showProductList = this.luxuryList.slice((page - 1) * this.showNumber, page * this.showNumber);
       } else {
-        this.showProductList = this.allProducts.slice((page - 1) * 20, page * 20);
+        this.showProductList = this.allProducts.slice((page - 1) * this.showNumber, page * this.showNumber);
       }
+      console.log(this.showProductList, "xxxxxxxxxxx")
     },
   },
 };
