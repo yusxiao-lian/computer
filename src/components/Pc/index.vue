@@ -5,7 +5,7 @@
             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" background-color="#ffffff" active-text-color="#409eff" @select="menuSelect">
                 <el-menu-item index="/Home">Home</el-menu-item>
                 <el-menu-item index="/Products">INVITATIONS</el-menu-item>
-                <el-menu-item index="/Contact">COMTACT US</el-menu-item>
+                <el-menu-item index="/Contact">CONTACT US</el-menu-item>
             </el-menu>
         </div>
         <div class="content_main">

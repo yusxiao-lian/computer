@@ -8,7 +8,7 @@
             <van-tabbar v-model="active" fixed safe-area-inset-bottom	>
                 <van-tabbar-item name="/HFiveHome" @click="toHome" icon="home-o">HOME</van-tabbar-item>
                 <van-tabbar-item name="/HFiveProducts" @click="toInvitions" icon="gift-card-o">INVITATIONS</van-tabbar-item>
-                <van-tabbar-item name="/HFiveContact" @click="toContact" icon="phone-circle-o">COMTACT US</van-tabbar-item>
+                <van-tabbar-item name="/HFiveContact" @click="toContact" icon="phone-circle-o">CONTACT US</van-tabbar-item>
             </van-tabbar>
         </div>
     </div>
