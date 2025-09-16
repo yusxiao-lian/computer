@@ -2,6 +2,8 @@ const path = require("path");
 const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
     publicPath: "./",
+    // 配置source map，改善错误定位
+    productionSourceMap: true, // 在生产环境中生成source map
     // 开发服务器配置，允许手机访问
     devServer: {
         host: '0.0.0.0', // 允许外部设备访问
@@ -9,12 +11,15 @@ module.exports = {
         disableHostCheck: true, // 禁用主机检查，允许手机访问
         compress: true // 启用gzip压缩，提升加载速度
     },
+    // 配置webpack
     configureWebpack: {
+        // 根据环境配置不同的devtool
+        devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'eval-cheap-module-source-map',
         resolve: {
-        alias: {
-            // 设置@/的意义
-            "@": resolve("src"),
-        },
+            alias: {
+                // 设置@/的意义
+                "@": resolve("src"),
+            },
         },
         // 配置性能提示
         performance: {
@@ -48,6 +53,6 @@ module.exports = {
                 }
             }
         }
-    },
+    }
 }
 
