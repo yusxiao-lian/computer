@@ -27,6 +27,7 @@ export default {
   },
   methods: {
     toAcrylic (index) {
+      localStorage.setItem("currentItemMenu", index);
       this.$router.push({
         path: '/HFiveProducts',
         query: {

@@ -128,7 +128,7 @@ export default {
       ...this.luxuryList,
     ];
     this.pageLength = this.allProducts.length;
-    let currentItemMenu =JSON.parse( localStorage.getItem("currentItemMenu"))
+    let currentItemMenu =JSON.parse(localStorage.getItem("currentItemMenu"))
     if(!currentItemMenu){
       this.showProductList = this.allProducts.slice(0, this.showNumber);
     } else if(currentItemMenu == 1){
@@ -152,6 +152,9 @@ export default {
       this.showProductList = this.luxuryList.slice(0, this.showNumber);
       this.pageLength = this.luxuryList.length;
     }
+  },
+  beforeDestroy() {
+    localStorage.removeItem("currentItemMenu");
   },
   methods: {
     filterClick() {
