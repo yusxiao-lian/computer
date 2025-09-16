@@ -95,8 +95,8 @@ export default {
       popupShow: false,
       top_img: top_img,
       activeFilterName: "",
-      pageLength: 0,
-      showNumber: 4,
+      pageLength: 0, //当前展示产品长度
+      showNumber: 20, //每页展示数量
       allProducts: [], //全部产品
       showProductList: [], //展示产品
       // 分类
