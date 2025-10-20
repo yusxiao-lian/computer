@@ -7,7 +7,18 @@ let Hardcover = [
   {
     type: "2",
     imgUrl: require("@/assets/img/Hardcover/pro_one.jpg"),
-    desc: "Dark green suede box invitation gold foil clear acrylic wedding invitation card",
+    desc: "xtravagan hardcover pocket invitation with blind & gold foiling monogram",
+    detail_desc: "Featuring a hardcover board wrapped in luxurious textured ivory then hot foil stamped with a crest and your names in real gold foil on the front, your guests will be mesmerized by the regal appeal at a first glance. When opened, a premium heavyweight cotton invitation bonded to the cover will present your custom intricate crest imprinted in blind embossing wedding details foil-stamped in gold along with a border to frame the artwork.",
+    detail_descItem: [
+      "1 main hardcover with blind debossing/foil logo(color & logo can be customized)",
+      "1 customized inser card with gold emboosing name and text",
+      "3 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_one_1.jpg"),
@@ -32,7 +43,18 @@ let Hardcover = [
   {
     type: "2",
     imgUrl: require("@/assets/img/Hardcover/pro_two.jpg"),
-    desc: "Dark green suede box invitation gold foil clear acrylic wedding invitation card",
+    desc: "Luxury Brush Pink Wedding Invitations with gold foiling acrylic",
+    detail_desc: "Luxury pink wedding invitations, presented in the form of folio captivate with their sumptuous, dense velvet cover foil-pressed with a wedding monogram. The invitation wording is foil-pressed on the acrylic/cardboard on the right side of the folio.If you wish to provide your guests with additional information, such as directions to the venue/church, local accommodations, etc., you can choose additional inserts assembled in the shaped velvet pocket. Alternatively, all the details could be included in one velvet mini-book with multiple pages inside. The invitation suite is complemented with a dense envelope. This hardcover invitation comes in a selection of colors and can be ordered in a custom size.",
+    detail_descItem: [
+      "1 main hardcover with blind debossing/foil logo(color & logo can be customized)",
+      "1 customized design acrylic card with foiling name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted"
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_two_1.jpg"),
@@ -60,7 +82,18 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_three.jpg"),
-    desc: "Baby pink velvet hardcover box with creative shape acrylic invitation card",
+    desc: "Navy Blue Hardcover Folio with Gold Silver Acrylic Invitation",
+    detail_desc: "A beautiful navy blue folio with an oversized silver mirror acrylic monogram invitation. Inside, the invitation is die cut made of acrylic and printed in white foiling print. The cardstock envelope has the monogram printed in gold foil stamp giving the final product a wow factor. The outer envelope is made of navy blue cardstock and the addresses are printed in digital silver foil",
+    detail_descItem: [
+      "1 main hardcover with silver/gold foiling logo tag on front(color & logo can be customized)",
+      "1 customized design acrylic card with foiling name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted"
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_three_1.jpg"),
@@ -85,7 +118,18 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_four.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Lush Textured Ivory Hardcover Booklet Wedding Invitation with Pocket for RSVP Card",
+    detail_desc: "Extravagant is the best word to describe this captivating and impressive hardcover pocket invitation. It is a favourite among our brides and the book-style design is a rising trend in the wedding invitations world. Featuring a hardcover board wrapped in luxurious textured black then hot foil stamped with a crest and your names in real gold foil on the front, your guests will be mesmerized by the regal appeal at a first glance.When opened, a premium heavyweight cotton invitation bonded to the cover will present your custom intricate crest imprinted in blind letterpress and your wedding details foil-stamped in gold along with a border to frame the artwork. The cotton stock used is the perfect canvas for the letterpress and foil stamping finishes to create a more pressed effect and a textured appeal. ",
+    detail_descItem: [
+      "1 main hardcover with blind debossing/foil logo(color & logo can be customized)",
+      "1 customized insert card with gold emboosing name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted"
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_four_1.jpg"),
@@ -113,7 +157,18 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_five.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Rose Gold Color Hardcover Folio with  Clear Acrylic Invitation and Luxury Buckle",
+    detail_desc: "A beautiful rose gold color pearlescent cardstock folio with overside clear acrylic invitation with gold foiling details. The rose gold folio has a matching wild rose color ribbon and rose gold color pearl buckle whicg for closing folio and make whole set invitation unique and eyecatching. The invitation also come with matching gold foil details on the outer envelope and cards.",
+    detail_descItem: [
+      "1 main hardcover with pearl ribbon buckle on front(color & logo can be customized)",
+      "1 customized design clear acrylic card with foiling name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_five_1.jpg"),
@@ -150,7 +205,18 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_six.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Elegant Pink Velvet Folio Hardcover Invitation with Gold Mirror Acrylic Rose Tag",
+    detail_desc: "A beautiful pink suede folio invitation complete with a custom gold foiling design liner, and a gold acrylic Rose detail monorgram on the outside of the folio. Invitation is ivory card stock with gold foil details. ",
+    detail_descItem: [
+      "1 main hardcover with good mirror acrylic tag on front(color & logo can be customized)",
+      "1 customized design pearlescent cardstock with foiling name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_six_1.jpg"),
@@ -175,7 +241,18 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_seven.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Luxury Sage Green Velvet Folio Wedding Invitations with Gray Acrylic Card",
+    detail_desc: "These velvet FOLIO invitations feature an elegant blind debossing wedding monogram on the front part of the cover. The invitation wording is foil-pressed on the gray acrylic on the right side of the folio.When opened, a premium gray acrylic invitation to the cover will present your custom intricate crest imprinted in white foiling wedding details along with a border to frame the artwork.",
+    detail_descItem: [
+      "1 main hardcover with blind debossing monogram on front(color & logo can be customized)",
+      "1 customized design gray acrylic card with white color foiling name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_seven_1.jpg"),
@@ -200,7 +277,18 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_eight.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Luxury Sage Green Velvet Folio Wedding Invitations with clear Acrylic Card",
+    detail_desc: "These velvet FOLIO invitations feature an elegant gold foiling wedding monogram on the front part of the cover. The invitation wording is foil-pressed on the gray acrylic on the right side of the folio.When opened, a premium gray acrylic invitation to the cover will present your custom intricate crest imprinted in white foiling wedding details along with a border to frame the artwork.",
+    detail_descItem: [
+      "1 main hardcover with gold foiling monogram on front(color & logo can be customized)",
+      "1 customized design gray acrylic card with white color foiling name and text",
+      "2 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_eight_1.jpg"),
@@ -225,7 +313,19 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_night.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Off White Velvet Folio Wedding Invitations with Tracing Paper Wedding Program",
+    detail_desc: "This regal looking hardcover velvet folio features an elegant embossed gold monogram on the front part of the cover.When opened, a premium tracing paper with wedding program will be showed first, after thatm you will see the wedding details which is including gold foiling debossing name and gold frame decoration",
+    detail_descItem: [
+      "1 main velvet hardcover with gold foiling monogram on front",
+      "1 customized tracing paper with gold foiling wedding program",
+      "1 customized design  pearlescent cardstock with gold foiling embossing name and printing details",
+      "3 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_night_1.jpg"),
@@ -253,7 +353,19 @@ let Hardcover = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Hardcover/pro_ten_1.jpg"),
-    desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    desc: "Arched Hardcover Invitation with Luxurious Textured Suede with Gold Foil and Debossing Edge",
+    detail_desc: "Creative Aech shape hardcover folio with gold foiling name and blind debossing frame on the font which is Classical and really elegant,After opening, the right side lis the wedding details with name and blind debossing monorgram and arch frame decoration, on the left side, there is blind debossing wedding church/hotel on the top and a pocket for small card for RSVP / wishing well /QR code card ",
+    detail_descItem: [
+      "1 main arch shape velvet hardcover with gold foiling monogram anf blind debossing edege on front",
+      "1 customized design cotton paper with gold foiling name and blind debossing adge & monorgram on right side",
+      "1 customized design cotton paper with blind debossing wedding church/hotel on the top and a pocket on left side",
+      "3 small cards with gold foiling can be into pocket",
+      "3D envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/Hardcover/pro_ten_1.jpg"),

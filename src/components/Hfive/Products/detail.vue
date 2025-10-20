@@ -41,6 +41,7 @@ export default {
       return {
         detail_desc: "11",
         detail_descItem: [],
+        detail_descItemTwo: [],
       };
     },
   },
@@ -48,13 +49,19 @@ export default {
     return {
       proChildrens: [],
       productName: "",
+      detail_desc: "",
+      detail_descItem: [],
+      detail_descItemTwo: [],
       boxDesc: {
         detail_desc:
           "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
         detail_descItem: [
           "1 main suede box foil logo(color & logo can be customized)",
           "1 customized shape acrylic with foil/printing",
-          "Any additional cards are accepted Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+          "Any additional cards are accepted",
+        ],
+        detail_descItemTwo: [
+          "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
         ],
       },
     };
@@ -63,6 +70,9 @@ export default {
     let list = JSON.parse(localStorage.getItem("proChildrens"));
     this.proChildrens = list.childrens || [];
     this.productName = list.desc || "";
+    this.detail_desc = list.detail_desc || '';
+    this.detail_descItem = list.detail_descItem || [];
+    this.detail_descItemTwo = list.detail_descItemTwo || [];
   },
 };
 </script>

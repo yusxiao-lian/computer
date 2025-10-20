@@ -24,6 +24,9 @@
                 <span class="desc_bottom_rice"></span>
                 <span>{{  item }}</span>
             </div>
+            <div class="desc_bottom" v-for="item in  currentDesc.detail_descItemTwo">
+                <span>{{  item }}</span>
+            </div>
         </div>
       </div>
     </div>
@@ -37,13 +40,19 @@ export default {
             proChildrens: [],
             currentIndex: 0,
             currentImg: '',
+            detail_desc: "",
+            detail_descItem: [],
+            detail_descItemTwo: [],
             boxDesc: {
                 detail_desc: "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
                 detail_descItem: [
                     "1 main suede box foil logo(color & logo can be customized)",
                     "1 customized shape acrylic with foil/printing",
-                    "Any additional cards are accepted Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+                    "Any additional cards are accepted",
                 ],
+                detail_descItemTwo: [    
+                    "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+                ]
             }
         }
     },
@@ -54,8 +63,9 @@ export default {
                 return this.boxDesc
             }
             return {
-                detail_desc: "11",
-                detail_descItem: []
+                detail_desc: this.detail_desc,
+                detail_descItem: this.detail_descItem,
+                detail_descItemTwo: this.detail_descItemTwo
             }
         }
     },
@@ -64,6 +74,9 @@ export default {
         this.proChildrens = list.childrens || []
         this.currentImg = this.proChildrens[0].imgUrl;
         this.productName = list.desc || '';
+        this.detail_desc = list.detail_desc || '';
+        this.detail_descItem = list.detail_descItem || [];
+        this.detail_descItemTwo = list.detail_descItemTwo || [];
     },
     methods: {
         changeImg(index) {
@@ -129,6 +142,7 @@ export default {
             font-size: 20px;
         }
         .desc_bottom {
+            margin-bottom: 6px;
             .desc_bottom_rice {
                 display: inline-block;
                 width: 8px;
