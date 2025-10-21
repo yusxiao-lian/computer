@@ -22,6 +22,9 @@
         <span class="desc_bottom_rice"></span>
         <span>{{ item }}</span>
       </div>
+      <div class="desc_bottom" v-for="item in  currentDesc.detail_descItemTwo">
+          <span>{{  item }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -39,9 +42,9 @@ export default {
         return this.boxDesc;
       }
       return {
-        detail_desc: "11",
-        detail_descItem: [],
-        detail_descItemTwo: [],
+        detail_desc: this.detail_desc,
+        detail_descItem: this.detail_descItem,
+        detail_descItemTwo: this.detail_descItemTwo,
       };
     },
   },
@@ -84,6 +87,9 @@ export default {
     height: 100%;
   }
 }
+.detail-box {
+  padding-bottom: 10px;
+}
 .detail-name {
   text-align: center;
   font-family: "myfont_protitle";
@@ -95,6 +101,9 @@ export default {
   padding: 10px 15px 0 15px;
   .desc_center {
     margin: 10px 0;
+  }
+  .desc_bottom {
+    margin-bottom: 5px;
   }
   .desc_bottom_rice {
     display: inline-block;
