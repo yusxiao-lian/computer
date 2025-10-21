@@ -1,7 +1,350 @@
 //  亚克力 acrylic  灰板 Hardcover  盒子 boxProducts    信封  Letterpress   待定 Luxury
 
 // 亚克力
-let acrylic = [];
+let acrylicList = [
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_two_6.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_9.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_10.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_11.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_12.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_two_5.jpg"),
+      },
+    ],
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_three_1.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_three_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_three_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_three_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_three_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_three_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_three_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_four_1.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_four_7.jpg"),
+      },
+    ],
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_five_4.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_10.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_11.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_12.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_9.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_five_13.jpg"),
+      },
+    ],
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_six_3.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_six_7.jpg"),
+      },
+    ],
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_seven_3.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_seven_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_seven_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_seven_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_seven_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_seven_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_seven_6.jpg"),
+      },
+    ]
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_eight_3.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_eight_8.jpg"),
+      },
+    ]
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_nine_6.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_nine_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_nine_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_nine_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_nine_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_nine_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_nine_6.jpg"),
+      },
+    ]
+  },
+  {
+    type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_ten_3.jpg"),
+    desc: "acrylic",
+    detail_desc: "detail_desc",
+    detail_descItem: [
+      "detail_descItem",
+    ],
+    detail_descItemTwo: [
+      "detail_descItemTwo"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_ten_7.jpg"),
+      },
+    ]
+  },
+]
 // 灰板
 let Hardcover = [
   {
@@ -388,6 +731,7 @@ let Hardcover = [
     ],
   },
 ];
+
 // 盒子
 let boxProducts = [
   {
@@ -498,7 +842,7 @@ let Luxury = [];
 
 export function productList(value) {
   if (value == 1) {
-    return acrylic;
+    return acrylicList;
   } else if (value == 3) {
     return boxProducts;
   } else if (value == 2) {
@@ -508,5 +852,5 @@ export function productList(value) {
   } else if (value == 5) {
     return Luxury;
   }
-  return acrylic;
+  return acrylicList;
 }
