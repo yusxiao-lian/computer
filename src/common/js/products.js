@@ -5,13 +5,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_two_6.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "Luxury Arch Acrylic Wedding Invitation with Elegant TerracottaVelvet Pocket + Modern velvet liners envbelope",
+    detail_desc: "Perfect for elegant wedding themes and intimate garden affairs or events with outdoor settings, this invitation is impressive and breathtaking. The wedding invite offers a versatile style with its clear 2mm acrylic and luxury foiling printing as well as custom offerings. While created as a modern wedding invitation the design was inspired by fairy tale weddings and old school romance.",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed"
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
