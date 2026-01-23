@@ -51,7 +51,6 @@ export default {
 
 <style lang="less" scoped>
 @import "../../assets/css/home.less";
-
 .menu-box {
     position: fixed;
     top: 0;
@@ -60,14 +59,11 @@ export default {
     width: 100%;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ccc;
     .logo {
         margin: 15px 90px 0 25px;
         width: 150px;
         height: 70px;
     }
 }
-.content_main {
-    padding-top: 86px;
-}
-
 </style>

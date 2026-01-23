@@ -390,6 +390,7 @@ export default {
   width: 100%;
   overflow: hidden;
   height: 500px;
+  background-color: #fff;
 }
 
 .carousel-wrapper {

@@ -67,6 +67,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .bottom_box {
+    background-color: #fff;
     display: flex;
     align-items: center;
     // justify-content: space-between;

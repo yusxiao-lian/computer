@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home_box">
     <div class="home_title">Your Big Day Starts Right Here</div>
     <Carousel :autoplay="true" :interval="4000" :loop="true" />
     <div class="title_box">
@@ -33,10 +33,6 @@
               Destiny's Compass
               For the couple who journeyed to find each other. Craft your prologue.
 A bespoke invitation is more than paper—it’s a tangible piece of your narrative, designed uniquely for your “I do.”
-              <!-- stationery that reflects your fabulous style. We will put together
-              the possibilities to make the magic happen and get back to you
-              with a custom quote within 1 business day. The journey to perfect
-              stationery starts here! -->
             </p>
           </div>
           <div>
@@ -72,8 +68,10 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
         />
       </div>
     </div>
+    <!-- 透明区 -->
+     <div class="transparent_box"></div>
     <!-- 视频图片 -->
-    <div class="video_box">
+    <!-- <div class="video_box">
       <div class="video_v">
         <video width="550" autoplay muted playsinline loop>
           <source src="@/assets/video/video_1.mp4" type="video/mp4" />
@@ -92,6 +90,60 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
           </p>
         </div>
       </div>
+    </div> -->
+    <!-- 产品图 -->
+    <div class="materials">
+      <div @click="toProducrs" class="title cursor_title">
+        <span>PRODUCTS</span>
+      </div>
+      <div class="about_invitation_one">
+      <div class="descript">
+        <div class="descript_top">
+          <div class="descript_top_text">
+            <div>
+            <img
+              @click="toAcrylic(3)"
+              style="width: 588px; height: 580px;cursor: pointer;"
+              src="@/assets/img/home/home_producttwo.jpg"
+              alt=""
+            />
+            
+          </div>
+            <span class="font_myfont font_myfont_title">Showcase | Bespoke Stories</span>
+            <p class="descript_text">
+              Destiny's Compass
+              For the couple who journeyed to find each other. Craft your prologue.
+A bespoke invitation is more than paper—it’s a tangible piece of your narrative, designed uniquely for your “I do.”
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="descript_top_two">
+        <img @click="toAcrylic(2)" class="img_top_two" style="width: 346px; height: 659px;cursor: pointer;" src="@/assets/img/home/home_productfour.jpg" />
+           
+        <img
+          @click="toAcrylic(5)"
+          style="width: 346px; height: 326px;margin-top: 10px;cursor: pointer;"
+          src="@/assets/img/home/home_productone.jpg"
+          alt=""
+        />
+      </div>
+      <div class="descript_top_three">
+        <img
+          @click="toAcrylic(1)"
+          style="width: 273px; height: 273px; margin-bottom: 10px;cursor: pointer;"
+          src="@/assets/img/home/home_productthree.jpg"
+          alt=""
+        />
+         <img
+          @click="toAcrylic(4)"
+          style="width: 273px; height: 273px; cursor: pointer;"
+          src="@/assets/img/home/home_productfive.jpg"
+          alt=""
+        />
+      </div>
+    </div>
     </div>
     <!-- VIEW ALL -->
     <div class="materials">
@@ -150,6 +202,15 @@ export default {
       // this.$router.push("/Products")
       this.$bus.$emit("toProduct");
     },
+    toAcrylic(val) {
+            this.$router.push({
+                path: "/Products",
+                query: {
+                    type: val
+                }
+            })
+            this.$bus.$emit("toMenu", "/Products");
+        },
   },
 };
 </script>
@@ -159,30 +220,37 @@ export default {
   padding-top: 20px;
 }
 .home_title {
+  background-color: #fff;
   font-family: "myfont";
   display: flex;
   justify-content: center;
   font-size: 30px;
   font-weight: 700;
   color: #c7b5b5;
-  margin-bottom: 10px;
+  padding: 15px 0 10px 0;
+  // position: relative;
+  // top: -1px;
+  // border-top: 1px solid #ccc;
 }
 .title_box {
+  background-color: #fff;
   h2 {
     font-family: "myfont";
   }
-  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
   display: flex;
   justify-content: center;
   font-size: 28px;
 }
 .about_ours {
+  background-color: #fff;
   text-align: center;
   font-size: 24px;
 }
 .about_invitation_one {
+  background-color: #fff;
   width: 55;
-  margin: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
   display: flex;
   justify-content: center;
   .descript {
@@ -209,6 +277,10 @@ export default {
   .descript_top_two {
     display: flex;
     flex-direction: column;
+    .video_top_two {
+      position: relative;
+      top: -23px;
+    }
   }
   .descript_top_three {
     margin-left: 5px;
@@ -219,7 +291,7 @@ export default {
   }
 }
 .about_invitation {
-  margin: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +313,8 @@ export default {
   }
 }
 .video_box {
-  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,12 +351,13 @@ export default {
   }
 }
 .materials {
+  background-color: #fff;
   .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 74px;
-    margin-bottom: 30px;
+    padding-top: 74px;
+    padding-bottom: 30px;
     font-size: 34px;
     span {
       display: inline-block;
@@ -293,6 +367,7 @@ export default {
     }
   }
   .cursor_title {
+    background-color: #fff;
     cursor: pointer;
   }
   .content {
@@ -306,16 +381,28 @@ export default {
   }
 }
 .home_bottom {
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 110px;
-  padding: 10px 70px;
+  padding: 10px 70px 10px 70px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   p {
     font-size: 26px;
     text-align: center;
   }
+}
+.transparent_box {
+  height: 240px;
+  width: 100%;
+}
+.home_box {
+   padding-top: 86px;
+    background-image: url("../../../assets/img/home/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% auto;
 }
 </style>
