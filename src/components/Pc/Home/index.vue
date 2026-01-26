@@ -50,20 +50,19 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
               <source src="@/assets/img/home/video.mp4" type="video/mp4" />
             </video>
         <img
-          style="width: 346px; height: 326px;position: relative; top: -15px;"
+          style="width: 346px; height: 326px;position: relative; top: -16px;"
           src="@/assets/img/home/Hardcover.png"
           alt=""
         />
       </div>
       <div class="descript_top_three">
         <img
-          style="width: 273px; height: 273px; margin-bottom: 10px;"
+          style="margin-bottom: 5px;"
           src="@/assets/img/home/letterpress.jpg"
           alt=""
         />
          <img
-          style="width: 273px; height: 273px"
-          src="@/assets/img/home/velvet box.png"
+          src="@/assets/img/home/velvetbox.png"
           alt=""
         />
       </div>
@@ -120,11 +119,11 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
         </div>
       </div>
       <div class="descript_top_two">
-        <img @click="toAcrylic(2)" class="img_top_two" style="width: 346px; height: 659px;cursor: pointer;" src="@/assets/img/home/home_productfour.jpg" />
+        <img @click="toAcrylic(2)" class="img_top_two" style="cursor: pointer;" src="@/assets/img/home/home_productfour.jpg" />
            
         <img
           @click="toAcrylic(5)"
-          style="width: 346px; height: 326px;margin-top: 10px;cursor: pointer;"
+          style="cursor: pointer;margin-top: 5px;"
           src="@/assets/img/home/home_productone.jpg"
           alt=""
         />
@@ -132,18 +131,31 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
       <div class="descript_top_three">
         <img
           @click="toAcrylic(1)"
-          style="width: 273px; height: 273px; margin-bottom: 10px;cursor: pointer;"
+          style="cursor: pointer;"
           src="@/assets/img/home/home_productthree.jpg"
           alt=""
         />
          <img
           @click="toAcrylic(4)"
-          style="width: 273px; height: 273px; cursor: pointer;"
+          style="cursor: pointer;margin-top: 5px;"
           src="@/assets/img/home/home_productfive.jpg"
           alt=""
         />
       </div>
     </div>
+    </div>
+    <!-- 流程图 -->
+     <div class="materials">
+      <div @click="toProducrs" class="title cursor_title">
+        <span>FLOW DIAGRAM</span>
+      </div>
+      <div>
+        <img
+          style="width: 100%;height: 800px;"
+          src="@/assets/img/home/customized SOP .jpg"
+          alt=""
+        />
+      </div>
     </div>
     <!-- VIEW ALL -->
     <div class="materials">
@@ -284,7 +296,8 @@ export default {
   }
   .descript_top_three {
     margin-left: 5px;
-    width: 273px;
+    padding-top: 5px;
+    width: 392px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,7 +407,7 @@ export default {
   }
 }
 .transparent_box {
-  height: 240px;
+  height: 300px;
   width: 100%;
 }
 .home_box {
@@ -403,6 +416,6 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: 1600px auto;
 }
 </style>
