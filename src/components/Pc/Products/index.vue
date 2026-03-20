@@ -14,19 +14,19 @@
         @select="handleSelect"
       >
         <el-menu-item index="1">
-          <span slot="title">Acrylic invitation</span>
+          <span slot="title">Acrylic & Envelope</span>
         </el-menu-item>
         <el-menu-item index="2">
-          <span slot="title">Hardcover invitation</span>
+          <span slot="title">Hardcover & Sude Booklet</span>
         </el-menu-item>
         <el-menu-item index="3">
-          <span slot="title">Box invitation</span>
+          <span slot="title">Suede Box</span>
         </el-menu-item>
         <el-menu-item index="4">
-          <span slot="title">Letterpress</span>
+          <span slot="title">Letterpress & 3D Embossed</span>
         </el-menu-item>
         <el-menu-item index="5">
-          <span slot="title">Luxury invitation</span>
+          <span slot="title">Save The Date & Vows</span>
         </el-menu-item>
       </el-menu>
     </div>
@@ -112,7 +112,7 @@ export default {
 @import "../../../assets/css/home.less";
 
 .products_box {
-  padding: 20px 0 0 0;
+  padding: 92px 0 0 0;
 }
 .top_img {
   position: relative;
@@ -140,7 +140,7 @@ export default {
   top: 520px;
 }
 .product_list {
-  width: calc(100% - 200px);
+  width: calc(100% - 225px);
   padding: 0 0 0 15px;
   .title_text_one {
     font-size: 20px;

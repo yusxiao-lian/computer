@@ -4,6 +4,52 @@
 let acrylicList = [
   {
     type: "1",
+    imgUrl: require("@/assets/img/acrylic/pro_one_1.jpg"),
+    desc: "Luxury",
+    detail_descItem: [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    detail_descItemTwo: [
+      "1"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_9.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/acrylic/pro_one_10.jpg"),
+      },
+    ],
+  },
+  {
+    type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_two_6.jpg"),
     desc: "Luxury Arch Acrylic Wedding Invitation with Elegant TerracottaVelvet Pocket + Modern velvet liners envbelope",
     detail_desc: "Perfect for elegant wedding themes and intimate garden affairs or events with outdoor settings, this invitation is impressive and breathtaking. The wedding invite offers a versatile style with its clear 2mm acrylic and luxury foiling printing as well as custom offerings. While created as a modern wedding invitation the design was inspired by fairy tale weddings and old school romance.",
@@ -58,13 +104,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_three_1.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "Luxury Arch shape green Acrylic Wedding Invitation with Creative Green Velvet Pocket + Modern velvet liners envbelope",
+    detail_desc: "Perfect for elegant wedding themes and intimate garden affairs or events with outdoor settings, this invitation is impressive and breathtaking. The wedding invite offers a versatile style with its clear 2mm acrylic and luxury foiling printing as well as custom offerings. While created as a modern wedding invitation the design was inspired by fairy tale weddings and old school romance.",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -90,13 +139,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_four_1.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "Luxury Arch shape green Acrylic Wedding Invitation with Classical Burgundy Velvet Pocket + Modern velvet liners envbelope",
+    detail_desc: "Perfect for elegant wedding themes and intimate garden affairs or events with outdoor settings, this invitation is impressive and breathtaking. The wedding invite offers a versatile style with its clear 2mm acrylic and luxury foiling printing as well as custom offerings. While created as a modern wedding invitation the design was inspired by fairy tale weddings and old school romance.",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -125,13 +177,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_five_4.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "Simple Design Frosted Acrylic with Blind Embossed Bride & Groom Name on Black Envelope",
+    detail_desc: "Technology brings about amazing print finishes for wedding invitations including trendy acrylic invites. This frosted acrylic features Black Ink Printing giving the already luxurious acrylic a more sophisticated look. The option to real Gold Foiling to make classial layout design.What's more, the envelope with elegent embossed design for couples name  and slit for RSVP & wishing well cards",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -178,13 +233,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_six_3.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "Simple Design Frosted Acrylic with Blind Embossed Bride & Groom Name on Navy Blue Envelope",
+    detail_desc: "Technology brings about amazing print finishes for wedding invitations including trendy acrylic invites. This frosted acrylic features Black Ink Printing giving the already luxurious acrylic a more sophisticated look. The option to real Gold Foiling to make classial layout design.What's more, the envelope with elegent embossed design for couples name  and slit for RSVP & wishing well cards",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -213,13 +271,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_seven_3.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "creative Silver Foiling Frosted Acrylic with Blind Embossed Bride & Groom Name on Navy Blue Envelope",
+    detail_desc: "Technology brings about amazing print finishes for wedding invitations including trendy acrylic invites. This frosted acrylic features Creative Silver Foiling Printing giving the already luxurious acrylic a more sophisticated look. The option to real Gold Foiling to make classial layout design.What's more, the envelope with elegent embossed design for couples name  and slit for RSVP & wishing well cards",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -245,13 +306,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_eight_3.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "creative Silver Foiling Clear Acrylic with Blind Embossed Bride & Groom Name on Navy Blue Envelope",
+    detail_desc: "Technology brings about amazing print finishes for wedding invitations including trendy acrylic invites. This frosted acrylic features Creative Silver Foiling Printing giving the already luxurious acrylic a more sophisticated look. The option to real Gold Foiling to make classial layout design.What's more, the envelope with elegent embossed design for couples name  and slit for RSVP & wishing well cards",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -283,13 +347,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_nine_6.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "creative Silver Foiling Frosted Acrylic with Blind Embossed Bride & Groom Name on Navy Blue Envelope",
+    detail_desc: "Technology brings about amazing print finishes for wedding invitations including trendy acrylic invites. This frosted acrylic features Creative Silver Foiling Printing giving the already luxurious acrylic a more sophisticated look. The option to real Gold Foiling to make classial layout design.What's more, the envelope with elegent embossed design for couples name  and slit for RSVP & wishing well cards",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -315,13 +382,16 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_ten_3.jpg"),
-    desc: "acrylic",
-    detail_desc: "detail_desc",
+    desc: "Creative Die Cut Shape Clear Acrylic Wedding Invitation with Luxury Gold Foiling Edge Envelope ",
+    detail_desc: "Perfect for elegant wedding themes and intimate garden affairs or events with outdoor settings, this invitation is impressive and breathtaking. The wedding invite offers a versatile style with its clear 2mm acrylic and luxury foiling printing as well as custom offerings. While created as a modern wedding invitation the design was inspired by fairy tale weddings and old school romance.",
     detail_descItem: [
-      "detail_descItem",
+      "1pc 2mm acrylic main card with customized design",
+      "1pc arch shape velvet packet for invitation card",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logol",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed",
     ],
     detail_descItemTwo: [
-      "detail_descItemTwo"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {

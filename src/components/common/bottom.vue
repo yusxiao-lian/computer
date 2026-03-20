@@ -7,11 +7,11 @@
             <div @click="toContact" class="pointer">COMTACT US</div>
         </div>
         <div class="products">
-            <div @click="toAcrylic(1)" class="pointer">Acrylic invitation</div>
-            <div @click="toAcrylic(2)" class="pointer mr_five">Hardcover invitation</div>
-            <div @click="toAcrylic(3)" class="pointer">Box invitation</div>
-            <div @click="toAcrylic(4)" class="pointer mr_five">Letterpress</div>
-            <div @click="toAcrylic(5)" class="pointer">Luxury invitation</div>    
+            <div @click="toAcrylic(1)" class="pointer">Acrylic & Envelope</div>
+            <div @click="toAcrylic(2)" class="pointer mr_five">Hardcover & Sude Booklet</div>
+            <div @click="toAcrylic(3)" class="pointer">Suede Box</div>
+            <div @click="toAcrylic(4)" class="pointer mr_five">Letterpress & 3D Embossed</div>
+            <div @click="toAcrylic(5)" class="pointer">Save The Date & Vows</div>    
         </div>
         <div class="contact">
             <div class="gmail cursorPointer" @click="toPhone">
@@ -113,11 +113,11 @@ export default {
         margin: 5px 0;
     }
     .menu  {
-        margin: 0 15% 0 17%;
+        margin: 0 14% 0 14%;
         
     }
     .products {
-        margin: 0 17% 0 0;
+        margin: 0 13% 0 0;
     }
     .contact {
         .myfont_3 {

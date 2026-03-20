@@ -112,7 +112,7 @@ export default {
 @import "../../../assets/css/home.less";
 .detail {
   width: 100%;
-  margin: 40px 0 0 0;
+  margin: 85px 0 0 0;
   border-top: 1px solid #dad5d5;
   padding: 30px 0 0 0;
 }
