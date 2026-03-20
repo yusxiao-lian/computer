@@ -108,11 +108,10 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
             />
             
           </div>
-            <span class="font_myfont font_myfont_title">Showcase | Bespoke Stories</span>
+            <span class="font_myfont font_myfont_title">Never run out of stationery ideas</span>
             <p class="descript_text">
-              Destiny's Compass
-              For the couple who journeyed to find each other. Craft your prologue.
-A bespoke invitation is more than paper—it’s a tangible piece of your narrative, designed uniquely for your “I do.”
+              At EL design Wedding Invitations, we offer custom-designed invitations for any event, featuring an extensive selection of stunning, one-of-a-kind designs to choose from. 
+Check out our collections of cards for every occasion including birthdays, weddings, baby showers and more
             </p>
           </div>
           
@@ -147,7 +146,7 @@ A bespoke invitation is more than paper—it’s a tangible piece of your narrat
     <!-- 流程图 -->
      <div class="materials">
       <div @click="toProducrs" class="title cursor_title">
-        <span>FLOW DIAGRAM</span>
+        <span>How to start customizing your dream cards?</span>
       </div>
       <div>
         <img
@@ -375,8 +374,9 @@ export default {
     span {
       display: inline-block;
       color: #fff;
-      background-color: black;
+      background-color: #66b0cd;
       padding: 5px 20px;
+      border-radius: 26px;
     }
   }
   .cursor_title {

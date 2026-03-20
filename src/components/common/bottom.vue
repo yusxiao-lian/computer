@@ -14,10 +14,21 @@
             <div @click="toAcrylic(5)" class="pointer">Luxury invitation</div>    
         </div>
         <div class="contact">
-            <div class="gmail">contant us: ellafff001@gmail.com</div>
-            <div>
-                <span @click="toFacebook" class="myfont_3"><i class="el-icon-thumb"></i>f</span>
-                <span @click="toInstagram" class="myfont_3 Instagram"><i class="el-icon-thumb"></i>ins</span>
+            <div class="gmail cursorPointer" @click="toPhone">
+                <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctOne.png" alt=""></img>
+                 &nbsp; +86 188 1410 9741
+            </div>
+            <div class="gmail">
+                <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctFour.png" alt=""></img>
+                  &nbsp;ellafff001@gmail.com
+            </div>
+            <div class="gmail cursorPointer" @click="toInstagram">
+                <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctThree.png" alt=""></img>
+                  &nbsp;EL Design Wedding Invitation
+            </div>
+            <div class="gmail cursorPointer" @click="toFacebook">
+                <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctTwo.png" alt=""></img>
+                  &nbsp; EL Design Wedding Invitation
             </div>
         </div>
     </div>
@@ -34,6 +45,9 @@ export default {
         },
         toInstagram() {
             window.open("https://www.instagram.com/eldesignweddinginvitation/");
+        },
+        toPhone() {
+            window.open("https://wa.me/8618814109741");
         },
         toAcrylic(val) {
             this.$router.push({
@@ -66,23 +80,32 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.cursorPointer {
+    cursor: pointer;
+     &:hover {
+            color: #3734e9;
+            text-decoration: underline;
+        }
+}
 .bottom_box {
     background-color: #fff;
     display: flex;
     align-items: center;
     // justify-content: space-between;
     padding: 30px 20px 20px 20px;
+    font-size: 20px;
     .logo {
         width: 180px;
         height: 110px;
     }
     .contact {
         margin: 10px 0;
+        font-size: 20px;
     }
     .pointer {
         cursor: pointer;
         &:hover {
-            color: #7ab6dd;
+            color: #3734e9;
             text-decoration: underline;
         }
     }
@@ -90,10 +113,11 @@ export default {
         margin: 5px 0;
     }
     .menu  {
-        margin: 0 15% 0 20%;
+        margin: 0 15% 0 17%;
+        
     }
     .products {
-        margin: 0 20% 0 0;
+        margin: 0 17% 0 0;
     }
     .contact {
         .myfont_3 {
@@ -110,6 +134,8 @@ export default {
         }
         .gmail {
             margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
         }
         .Instagram {
             margin: 0 0 0 20px;
