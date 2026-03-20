@@ -81,9 +81,9 @@ export default {
   computed: {
     currentDesc() {
       let current = JSON.parse(localStorage.getItem("currentItemMenu"));
-      if (current == 3) {
-        return this.boxDesc;
-      }
+      // if (current == 3) {
+      //   return this.boxDesc;
+      // }
       return {
         detail_desc: this.detail_desc,
         detail_descItem: this.detail_descItem,
@@ -120,7 +120,10 @@ export default {
   display: flex;
 }
 .img_list {
-  width: 84px;
+  width: 300px;
+  max-height: 700px;
+  overflow: hidden;
+  overflow-y: auto;
   img {
     height: 76px;
     width: 76px;

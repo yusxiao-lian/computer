@@ -803,6 +803,379 @@ let Hardcover = [
       },
     ],
   },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_one_1.jpg"),
+    desc: "Gatefold Luxury Hardcover Invitation |hardcover suede invite | Party Invitation | Quinceanera Invitation Baby Blue | Dusty Blue Wedding Invitation",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and transparent Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm acrylic main card with customized design ",
+      "1pc velvet gatefold with pockets inside",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_one_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_one_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_one_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_one_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_one_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_one_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_two_1.jpg"),
+    desc: "Gatefold Luxury Hardcover Invitation |hardcover suede invite | Party Invitation | Luxury Black Velvet Invitation | Acrylic Wedding Invitation",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and transparent Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_two_8.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_three_1.jpg"),
+    desc: "Velvet Emerald Green and Gold Foil Trifold Acrylic | Modern Gold Acrylic Wedding Invitation | Acrylic Tri Fold Wedding Invitation Suites",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and transparent Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_5.jpg"),   
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_three_9.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_four_1.jpg"),
+    desc: "Silver Trifold Velvet Wedding Invitation | Custom Mirror Acrylic Bundle | Customize Silver Foil Monogram Crest | Invitations Set",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and transparent Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_5.jpg"),   
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_four_8.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_five_1.jpg"),
+    desc: "Luxurious Gold Pocket Fold Invitation | Custom Wedding Invites Velvet Emerald | Gold Mirror Acrylic | Monogram Cross | Panel Pocket Invite",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and High-end Gold Mirror Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted/silver/gold mirror acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_five_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_five_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_five_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_five_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_five_5.jpg"),   
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_five_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_six_1.jpg"),
+    desc: "Wedding Invitation Suede | Luxury Forest Velvet Envelope and Elegant Acrylic Invitation | Green tassel | Trifold Booklet Invitation | Gold Mirror Acrylic Tag",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and High-end Gold Mirror Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside and  Creative gold mirror monorgram tag & Tissue",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted/silver/gold mirror acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_six_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_six_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_six_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_six_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_six_5.jpg"),     
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_six_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_1.jpg"),
+    desc: "Baby Pink Velvet Booklet Wedding Invitation | Minimalist Wedding Invitation Stationery | Quinceanera Graduation Invitation | Acrylic Card Invitation",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and High-end Gold Mirror Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside and  Creative monorgram tag",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted/silver/gold mirror acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_seven_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_eight_1.jpg"),
+    desc: "Luxury Boxed Wedding Invitation Pocket Envelope | Gate Folder Invitation | Acrylic | Burgundy Velvet | Classic Invitation with Gold Foil Crest | Tri-fold Suede Hardcover Invitation",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and High-end Gold Mirror Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside and  Creative monorgram tag",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted/silver/gold mirror acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_eight_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_eight_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_eight_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_eight_4.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_night_1.jpg"),
+    desc: "Trifold Wedding Invitation Pocket Set | Booklet Invitation | Custom Invitations | Red Velvet | Gold Foil Crest | Creative Initial Monogram tag",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and High-end Gold Mirror Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside and  Creative monorgram tag",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted/silver/gold mirror acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_night_9.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_17.jpg"),
+    desc: "Velvet Acrylic Wedding Invitation | Gold Foil Crest | Custom Invitation Booklet | Trifold Invite Set Card | Pink Luxury Wedding Invitations | Gold Mirror Initial Tag",
+    detail_desc: "Luxury hand-made hardcover invitation folio with pockets and High-end Gold Mirror Acrylic in gate fold style. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc velvet gatefold with pockets inside and Gold Mrror Acrylic Initial Tag",
+      "1pc matched size velvet liner envelope for whole set invitation with customized logo",
+    ],
+    detail_descItemTwo: [
+      "Any additional cards are accepted; clear/frosted/silver/gold mirror acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_11.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_12.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_13.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_14.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_15.jpg"), 
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_16.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_17.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_18.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/hc_pro_ten_19.jpg"),
+      },
+    ],
+  },
 ];
 
 // 盒子
@@ -811,6 +1184,16 @@ let boxProducts = [
     type: "3",
     imgUrl: require("@/assets/img/mainProduct/pro_one.jpg"),
     desc: "Luxury suede/velvet box with customized gold mirror acrylic card invitation",
+    detail_desc:
+      "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
+    detail_descItem: [
+      "1 main suede box foil logo(color & logo can be customized)",
+      "1 customized shape acrylic with foil/printing",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/mainProduct/pro_detail_1.jpg"),
@@ -836,6 +1219,16 @@ let boxProducts = [
     type: "3",
     imgUrl: require("@/assets/img/mainProduct/pro_two.jpg"),
     desc: "Dark green suede box invitation gold foil clear acrylic wedding invitation card",
+    detail_desc:
+      "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
+    detail_descItem: [
+      "1 main suede box foil logo(color & logo can be customized)",
+      "1 customized shape acrylic with foil/printing",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/mainProduct/pro_two_1.jpg"),
@@ -861,6 +1254,16 @@ let boxProducts = [
     type: "3",
     imgUrl: require("@/assets/img/mainProduct/pro_three.jpg"),
     desc: "Baby pink velvet hardcover box with creative shape acrylic invitation card",
+    detail_desc:
+      "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
+    detail_descItem: [
+      "1 main suede box foil logo(color & logo can be customized)",
+      "1 customized shape acrylic with foil/printing",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/mainProduct/pro_three_1.jpg"),
@@ -886,6 +1289,16 @@ let boxProducts = [
     type: "3",
     imgUrl: require("@/assets/img/mainProduct/pro_four.jpg"),
     desc: "Creative shape cleae acrylic invitations with ivory suede foiling logo box ",
+    detail_desc:
+      "This invitation is very luxurious which is made by hardcover+high quality suede with gold foiling and creative acrylic which is really elegant and will make you day",
+    detail_descItem: [
+      "1 main suede box foil logo(color & logo can be customized)",
+      "1 customized shape acrylic with foil/printing",
+      "Any additional cards are accepted",
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
     childrens: [
       {
         imgUrl: require("@/assets/img/mainProduct/pro_four_1.jpg"),
@@ -904,6 +1317,244 @@ let boxProducts = [
       },
       {
         imgUrl: require("@/assets/img/mainProduct/pro_four_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_one_1.jpg"),
+    desc: "Wedding Purple Velvet Invitation Box Clear Acrylic Invitations Luxury invitation | Boxed Invitation | Gold Custom Logo Monogram",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm acrylic main card with customized design",
+      "1pc Soft-touch suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_one_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_one_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_one_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_one_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_one_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_one_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_two_1.jpg"),
+    desc: "Hot Pink Boxed Wedding Invitation set ,3D Golden Plexi Wedding Invitation Suite Luxury Box, Elegant Boho Velvet Wedding Cards, Bespoke Clear Acrylic Invites",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm acrylic main card with customized design",
+      "1pc Hot Pink suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_two_8.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_three_1.jpg"),
+    desc: "Loyal Navy BlueWedding Invitation set , Golden Plexi Wedding Invitation Suite Luxury Box, Elegant Boho Velvet Wedding Cards, Bespoke Clear Acrylic Invites",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc Navy Blue suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_three_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_three_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_three_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_three_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_three_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_three_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_four_1.jpg"),
+    desc: "Ivory Velvet Gold Wedding Invitations Pocket, Luxury Wedding Invitation Box with Tissue and Ribbon,Elegant Gold Wedding Cards, Glam Invite | Wedding Station",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm gold mirror acrylic main card with customized design",
+      "1pc Ivory/Nude suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_four_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_four_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_four_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_four_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_four_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_four_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_five_1.jpg"),
+    desc: "Luxury Green Velvet Wedding Invitation Box Suede | Acrylic Wedding Invitations in Box and Luxury Tassel | Custom Wedding Monogram",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm clear acrylic main card with customized design",
+      "1pc Dark Green suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_five_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_five_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_five_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_five_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_five_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_five_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_six_1.jpg"),
+    desc: "Black Luxury Wedding Invitation Box, Custom Logo or Wedding Monogram, Illustration Pressed Foil, Acrylic Invitation, Hand Made Tassel",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm clear acrylic main card with customized design",
+      "1pc Luxury Black suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_six_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_six_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_six_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_six_4.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/mainProduct/box_pro_seven_1.jpg"),
+    desc: "Creative Black Velvet Box, Wedding Invitation With Custom Acrylic, Wedding Invitations Box, Boxed Invite Bundle, Gold Monogram with RSVP card",
+    detail_desc:
+      "Luxury hand-made Suede Boxed invitation folio with Ribbon and transparent Acrylic and Tissue inside. This elegant invite comes with custom foiling initial monogram on front. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "1pc 2mm clear acrylic main card with customized design",
+      "1pc Luxury Black suede handmade box with ribbon and tissue",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_seven_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_seven_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_seven_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_seven_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_seven_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/mainProduct/box_pro_seven_6.jpg"),
       },
     ],
   },
