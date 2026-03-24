@@ -96,6 +96,7 @@ export default {
     },
   },
   created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     let list = JSON.parse(localStorage.getItem("proChildrens"));
     this.proChildrens = list.childrens || [];
     this.currentImg = this.proChildrens[0].imgUrl;

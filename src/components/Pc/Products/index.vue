@@ -74,6 +74,7 @@ export default {
     Bottom
   },
   created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     // 检查路由查询参数中是否有type
     const type = this.$route.query.type || "1";
     this.active = type;
