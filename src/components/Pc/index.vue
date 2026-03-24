@@ -38,12 +38,16 @@ export default {
         this.$bus.$on("toProduct",()=>{
             this.$router.replace("/Products")
             this.activeIndex = "/Products"
+            // 滚动到页面顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         })
     },
     methods: {
         menuSelect(index) {
             this.activeIndex = index;
-            this.$router.push(index)
+            this.$router.push(index);
+            // 滚动到页面顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     }
 }
