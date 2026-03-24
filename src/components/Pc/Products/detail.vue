@@ -47,13 +47,17 @@
         </div>
       </div>
     </div>
+    <Bottom />
   </div>
 </template>
 <script>
 import DetainOne from "./compoments/detainOne.vue";
+import Bottom from "../../common/bottom.vue";
+
 export default {
   components: {
     DetainOne,
+    Bottom,
   },
   data() {
     return {
@@ -118,12 +122,17 @@ export default {
 }
 .top {
   display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
 }
 .img_list {
-  width: 300px;
+  width: 700px;
   max-height: 700px;
   overflow: hidden;
   overflow-y: auto;
+  .img_box {
+    width: 80px;
+  }
   img {
     height: 76px;
     width: 76px;
@@ -136,11 +145,11 @@ export default {
 }
 .img_main {
   width: 750px;
-  height: 750px;
+  // height: 750px;
   padding: 0 50px 0 80px;
   img {
     width: 700px;
-    height: 700px;
+    // height: 700px;
   }
 }
 .detail_box {
@@ -191,7 +200,7 @@ export default {
     padding: 0 30px 0 50px;
     img {
       width: 500px;
-      height: 500px;
+      // height: 500px;
     }
   }
   .img_desc {
@@ -207,7 +216,7 @@ export default {
     padding: 0 30px 0 50px;
     img {
       width: 600px;
-      height: 600px;
+      // height: 600px;
     }
   }
   .img_desc {
@@ -223,7 +232,7 @@ export default {
     padding: 0 50px 0 80px;
     img {
       width: 600px;
-      height: 600px;
+      // height: 600px;
     }
   }
   .img_desc {
@@ -239,7 +248,7 @@ export default {
     padding: 0 60px 0 80px;
     img {
       width: 700px;
-      height: 700px;
+      // height: 700px;
     }
   }
   .img_desc {

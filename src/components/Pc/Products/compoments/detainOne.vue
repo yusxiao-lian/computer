@@ -4,16 +4,23 @@
         <span>MATERIALS & CRAFT</span>
       </div>
       <div class="content">
+        <div class="content-top">
+          <img
+          src="@/assets/img/home/acrylicColor.jpg"
+          alt=""
+        />
+        </div>
         <img
           src="@/assets/img/home/craft_1.jpg"
           alt=""
         />
         <img src="@/assets/img/home/craft_2.jpg" alt="" />
-        <img
-          src="@/assets/img/home/craft_3.jpg"
+        <div class="content-bottom">
+          <img
+          src="@/assets/img/home/customized SOP .jpg"
           alt=""
         />
-        <img src="@/assets/img/home/craft_4.jpg" alt="" />
+        </div>
       </div>
   </div>
 </template>
@@ -44,6 +51,20 @@
     //   margin: 25px 0 0 30px;
       width: 47%;
     }
+ }
+ .content-top {
+    width: 100%;
+    margin: 0 0 10px 0;
+    img {
+      width: 100%;
+    }
+ }
+ .content-bottom {
+  width: 100%;
+  margin: 20px 0 0 0;
+  img {
+    width: 100%;
+  }
  }
 }
 </style>

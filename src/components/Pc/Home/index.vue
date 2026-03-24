@@ -157,7 +157,7 @@ Check out our collections of cards for every occasion including birthdays, weddi
       </div>
     </div>
     <!-- VIEW ALL -->
-    <div class="materials">
+    <!-- <div class="materials">
       <div @click="toProducrs" class="title cursor_title">
         <span>VIEW ALL</span>
       </div>
@@ -182,15 +182,7 @@ Check out our collections of cards for every occasion including birthdays, weddi
           </p>
         </div>
       </div>
-    </div>
-    <div class="home_bottom">
-      <p>
-        With the freedom to choose your colors, personalize every detail, and
-        craft your wording, your wedding invitations will be a true reflection
-        of your love story. We're here to make your wedding dreams come true
-        with our dedication to customization and personalization.
-      </p>
-    </div>
+    </div> -->
     <Bottom></Bottom>
   </div>
 </template>
@@ -393,19 +385,7 @@ export default {
     }
   }
 }
-.home_bottom {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 70px 10px 70px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  p {
-    font-size: 26px;
-    text-align: center;
-  }
-}
+
 .transparent_box {
   height: 300px;
   width: 100%;

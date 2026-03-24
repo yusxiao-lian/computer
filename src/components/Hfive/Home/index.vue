@@ -102,8 +102,8 @@
       <div class="content">
         <img style="margin: 0 0 15px 0" :src="craft_1" alt="" />
         <img style="margin: 0 0 15px 0" :src="craft_2" alt="" />
-        <img style="margin: 0 0 15px 0" :src="craft_3" alt="" />
-        <img style="margin: 0 0 15px 0" :src="craft_4" alt="" />
+        <!-- <img style="margin: 0 0 15px 0" :src="craft_3" alt="" /> -->
+        <!-- <img style="margin: 0 0 15px 0" :src="craft_4" alt="" /> -->
       </div>
     </div>
     <div class="about_invitations">
@@ -158,8 +158,8 @@ import video_1 from "@/assets/video/video_1.mp4";
 import home_2 from "@/assets/img/home/home_2.jpg";
 import craft_1 from "@/assets/img/home/craft_1.jpg";
 import craft_2 from "@/assets/img/home/craft_2.jpg";
-import craft_3 from "@/assets/img/home/craft_3.jpg";
-import craft_4 from "@/assets/img/home/craft_4.jpg";
+// import craft_3 from "@/assets/img/home/craft_3.jpg";
+// import craft_4 from "@/assets/img/home/craft_4.jpg";
 import home_3 from "@/assets/img/home/home_3.jpg";
 import more_1 from "@/assets/img/mainProduct/pro_detail_2.jpg";
 import more_2 from "@/assets/img/mainProduct/pro_detail_2.jpg";
@@ -194,8 +194,8 @@ export default {
       home_2: home_2,
       craft_1: craft_1,
       craft_2: craft_2,
-      craft_3: craft_3,
-      craft_4: craft_4,
+      // craft_3: craft_3,
+      // craft_4: craft_4,
       home_3: home_3,
       moreList: [
         {
