@@ -25,7 +25,8 @@
             <h2 class="font_myfont_protitle">{{ productName }}</h2>
             <div class="desc_content">
               <div class="desc_top">{{ currentDesc.detail_desc }}</div>
-              <div class="desc_center">This suite includes: </div>
+              <div v-show="currentType !== '5'" class="desc_center">This suite includes: </div>
+              <div v-show="currentType == '5'" style="margin-top: 25px;"></div>
               <div
                 class="desc_bottom"
                 v-for="item in currentDesc.detail_descItem"
@@ -94,6 +95,9 @@ export default {
         detail_descItemTwo: this.detail_descItemTwo,
       };
     },
+    currentType() {
+      return JSON.parse(localStorage.getItem("currentItemMenu"));
+    }
   },
   created() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

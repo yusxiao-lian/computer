@@ -1,4 +1,4 @@
-//  亚克力 acrylic  灰板 Hardcover  盒子 boxProducts    信封  Letterpress   待定 Luxury
+//  亚克力 acrylic  灰板 Hardcover  盒子 boxProducts    信封  Letterpress   待定 Vows
 
 // 亚克力
 let acrylicList = [
@@ -1176,6 +1176,97 @@ let Hardcover = [
       },
     ],
   },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/pro_thirteen_9.jpg"),
+    desc: "Creative Gatefold Arch Shape Suede Wedding Invitation Signature Gardcover Velet  Invitation with Blind Embossed Initials Tag on Front",
+    detail_desc: "A Touch of Velvet, a Promise in Silver – The Cover Bears an Embossed Logo, a Quiet Signature of Elegance; Within, Your Names Shine in Foil Beside a Custom Logo, Where Love Takes Shape in Every Detail. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "A Velvet Embrace, Sealed in Silver – Your Names, Your Story, Your Invitation",
+    ],
+    detail_descItemTwo: [
+      "Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_5.jpg"), 
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_9.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_10.jpg"),  
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_11.jpg"),  
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_thirteen_12.jpg"),  
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Hardcover/pro_fourteen_5.jpg"),
+    desc: "Thick Black Velvet Cover Love Wedding Invitation Arch Shape Custom Design Handmade Paper A5 Size Book Fold Invitation Set",
+    detail_desc: "Handcrafted Velvet Wedding Invitation – Personalized with White‑Printed Names, Elegant Blind embossed Edges, and a Custom Couple with Pet Logo. The soft feel of velvet and elegant monogram makes this invite truly elegant.",
+    detail_descItem: [
+      "Clean lines, honest words,and the two names that matter most. No ornament needed—their love is the statement.",
+    ],
+    detail_descItemTwo: [
+      " Additional card can be RSVP card, Thank you cards, save the dates, table numbers etc; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_5.jpg"), 
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_9.jpg"),  
+      },
+      {
+        imgUrl: require("@/assets/img/Hardcover/pro_fourteen_10.jpg"),  
+      },
+    ],
+  },
 ];
 
 // 盒子
@@ -1561,8 +1652,210 @@ let boxProducts = [
 ];
 
 // 信封
-let Letterpress = [];
-let Luxury = [];
+let Letterpress = [
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Letterpress/pro_one_4.jpg"),
+    desc: "1111",
+    detail_desc:
+      "111",
+    detail_descItem: [
+      "111",
+      "111",
+    ],
+    detail_descItemTwo: [
+      "111",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_one_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_one_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_one_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_one_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_one_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_one_6.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Letterpress/pro_two_4.jpg"),
+    desc: "1111",
+    detail_desc:
+      "111",
+    detail_descItem: [
+      "111",
+      "111",
+    ],
+    detail_descItemTwo: [
+      "111",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Letterpress/pro_two_10.jpg"),
+      },
+    ],
+  },
+];
+let Vows = [
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Vow/pro_one_1.jpg"),
+    desc: "Handmade Luxury Oval menu, Bound by Hand, Framed in Elegance – Oval Pages Embellished with Gold Initial and Red foil flowers ,Each Blessing a Silent Promise, Each Thread a Tender Embrace",
+    detail_desc:
+      "Every blessing is hand‑stitched into this oval menu—where vintage gold foiling Initialmeets romantic red Flowers,and each foil detail tells a story of timeless love.From the warmth of the hand‑sewn thread to the intricate elegance of the design,it’s more than a menu—it's a keepsake of your first chapter together.Cherish the beauty. Celebrate the beginning.",
+    detail_descItem: [
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_9.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_10.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_11.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_one_12.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Vow/pro_two_1.jpg"),
+    desc: "Handmade ivory Wedding Ceremony card, Hand stitched Oval wedding menu card with gold foiling initial,sewn with tenderness, ready to welcome those who matter most.",
+    detail_desc:
+      "An oval keepsake, cradled in hand-stitched threads.Crafted on rich, textured paper,adorned with your gilded initial—a quiet promise etched in gold,sewn with tenderness,ready to welcome those who matter most.",
+    detail_descItem: [
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_5.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_6.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_7.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_8.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_9.jpg"),  
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_two_10.jpg"),
+      },
+    ],
+  },
+  {
+    type: "3",
+    imgUrl: require("@/assets/img/Vow/pro_three_1.jpg"),
+    desc: "Handmade Res/Ivory Wedding Vow card, Hand stitched Oval wedding menu card with gold foiling initial,sewn with tenderness, ready to welcome those who matter most.",
+    detail_desc:
+      "There is something sacred in the details.The gentle curve of an oval.Paper so textured it feels like a love letter.A single initial brushed in gold—yours, together.And along the edges, thread woven by hand,stitch by stitch, as if time itself paused to make it beautiful.This is not merely a ceremony card.It is the first chapter,held in your guests’ hands before the journey begins.",
+    detail_descItem: [
+    ],
+    detail_descItemTwo: [
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
+    ],
+    childrens: [
+      {
+        imgUrl: require("@/assets/img/Vow/pro_three_1.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_three_2.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_three_3.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_three_4.jpg"),
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_three_5.jpg"),  
+      },
+      {
+        imgUrl: require("@/assets/img/Vow/pro_three_6.jpg"),
+      },
+    ],
+  },
+];
 
 export function productList(value) {
   if (value == 1) {
@@ -1574,7 +1867,7 @@ export function productList(value) {
   } else if (value == 4) {
     return Letterpress;
   } else if (value == 5) {
-    return Luxury;
+    return Vows;
   }
   return acrylicList;
 }
