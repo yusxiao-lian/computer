@@ -1267,6 +1267,9 @@ let Hardcover = [
   },
 ];
 
+// 反转整个Hardcover数组，使元素按倒序排列
+Hardcover.reverse();
+
 // 盒子
 let boxProducts = [
   {

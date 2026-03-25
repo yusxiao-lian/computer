@@ -105,6 +105,7 @@ export default {
     handleSelect(index) {
       this.productLists = productList(index) || [];
       localStorage.setItem("currentItemMenu", JSON.stringify(index))
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   },
 };
