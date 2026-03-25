@@ -1656,7 +1656,7 @@ let Letterpress = [
     imgUrl: require("@/assets/img/Letterpress/pro_one_4.jpg"),
     desc: "Classical Wedding Invitation Black Cardstock with White & Gold Foiling Name, Elegant Design Envelope with Slip for RSVP Card",
     detail_desc:
-      "111",
+      "Such as this black white and gold wedding invitation card  with your initials in luxurious real gold foil along with your names. The hot foil stamping in exquisite gold on our signature ivory or brighter white cotton stock offers a delightful pressed effect that works flawlessly with the classic black ink printed text to breaks up the bling.",
     detail_descItem: [
       "1pc 500g cardstock invitation with white foiling writing and luxury gold foiling name",
       "1pc 250g cardstock RSVP card ",
