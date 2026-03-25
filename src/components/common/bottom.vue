@@ -26,19 +26,19 @@
             <div class="contact">
                 <div class="gmail cursorPointer" @click="toPhone">
                     <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctOne.png" alt=""></img>
-                    &nbsp; +86 188 1410 9741
+                    &nbsp; wa.me
                 </div>
                 <div class="gmail">
                     <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctFour.png" alt=""></img>
-                    &nbsp;ellafff001@gmail.com
+                    &nbsp; ellafff001@gmail.com
                 </div>
                 <div class="gmail cursorPointer" @click="toInstagram">
                     <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctThree.png" alt=""></img>
-                    &nbsp;EL Design Wedding Invitation
+                    &nbsp; EL Design Wedding Invitation
                 </div>
                 <div class="gmail cursorPointer" @click="toFacebook">
                     <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctTwo.png" alt=""></img>
-                    &nbsp; EL Design Wedding Invitation
+                    &nbsp;  EL Design Wedding Invitation
                 </div>
             </div>
         </div>
