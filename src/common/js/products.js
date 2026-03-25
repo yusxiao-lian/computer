@@ -5,15 +5,13 @@ let acrylicList = [
   {
     type: "1",
     imgUrl: require("@/assets/img/acrylic/pro_one_1.jpg"),
-    desc: "Luxury",
+    desc: "Custom Colors Handmade Envelopes with Velvet Liner, Elegant Envelopes Velvet Liner, Luxury Invitation Envelope, Card Envelopes",
+    detail_desc: "Elegant Nude Handmade Envelopes with Velvet Liner, Affordable Elegant Envelopes, Velvet Liner, Luxury Invitation Envelope, Card Envelopes, Bespoke Custom Wedding Invitation Envelopes Colors VelvetEnvelopes are 250gsm, heavyweight paper premium quality.",
     detail_descItem: [
-      "1",
-      "1",
-      "1",
-      "1"
+      "Size & Color can be customized, for the back of the envelope, you can choose to print your return address, and your wedding monorgram on front",
     ],
     detail_descItemTwo: [
-      "1"
+      "Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!"
     ],
     childrens: [
       {
@@ -1656,15 +1654,16 @@ let Letterpress = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Letterpress/pro_one_4.jpg"),
-    desc: "1111",
+    desc: "Classical Wedding Invitation Black Cardstock with White & Gold Foiling Name, Elegant Design Envelope with Slip for RSVP Card",
     detail_desc:
       "111",
     detail_descItem: [
-      "111",
-      "111",
+      "1pc 500g cardstock invitation with white foiling writing and luxury gold foiling name",
+      "1pc 250g cardstock RSVP card ",
+      "1pc matched size envelope with slip for RSVP card and gold foiling initial on front "
     ],
     detail_descItemTwo: [
-      "111",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
     ],
     childrens: [
       {
@@ -1690,15 +1689,16 @@ let Letterpress = [
   {
     type: "3",
     imgUrl: require("@/assets/img/Letterpress/pro_two_4.jpg"),
-    desc: "1111",
+    desc: "Arch Shape Wedding Invitation, 500g Cotton Paper Invitation with Blind Embossed Flowers Edge and Gold Foiling Name, Wedding Invitation Set Envelope with 3D Enbossing ",
     detail_desc:
-      "111",
+      "Arch wedding invites with fully customisable embossed names and white ink printing. The luxurious feel of cotton or ivory textured paper which gives this invitation suite a superior edge matching accessory cards, on-the-day signage, and coloured envelopes to complete the look.",
     detail_descItem: [
-      "111",
-      "111",
+      "1pc 500g cardstock Arch invitation with flower embossed flowers and gold foiling name ",
+      "1pc 500g cardstock RSVP card with gold foiling edge",
+      "1pc matched size envelope with slip for RSVP card and gold foiling initial on front"
     ],
     detail_descItemTwo: [
-      "111",
+      "Any additional cards are accepted; clear/frosted acrylic is optional; printing&envelope color can be changed Minimum Quantity for this product is 50. If an order is placed for below 50 qty the unit price will be higher. Thank you so much for your understanding!",
     ],
     childrens: [
       {

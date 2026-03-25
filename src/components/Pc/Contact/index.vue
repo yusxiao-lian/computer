@@ -125,19 +125,26 @@ export default {
 
 /* 主要内容 */
 .contact-content {
+  background: url('../../../assets/img/home/contactUs.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 163px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto 50px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 /* 联系信息 */
 .contact-info {
-  flex: 1;
+  margin-bottom: 30px;
+  position: relative;
+  left: 25%;
   min-width: 300px;
-  background: #f8f9fa;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -196,12 +203,15 @@ export default {
 
 /* 联系表单 */
 .contact-form {
-  flex: 1;
+  position: relative;
+  left: 25%;
   min-width: 300px;
-  background: white;
-  padding: 30px;
+  width: 28%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 .contact-form h2 {
@@ -225,7 +235,7 @@ export default {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 5px;
