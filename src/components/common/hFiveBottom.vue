@@ -4,17 +4,30 @@
       <img class="logo" src="@/assets/img/home/logo.png" alt="" />
     </div>
     <div class="product-menu">
-        <div @click="toAcrylic(1)" class="pointer">Acrylic invitation</div>
-            <div @click="toAcrylic(2)" class="pointer mr_five">Hardcover invitation</div>
-            <div @click="toAcrylic(3)" class="pointer">Box invitation</div>
-            <div @click="toAcrylic(4)" class="pointer mr_five">Letterpress</div>
-            <div @click="toAcrylic(5)" class="pointer">Luxury invitation</div>
+        <div @click="toAcrylic(1)" class="pointer">Acrylic & Envelope</div>
+            <div @click="toAcrylic(2)" class="pointer mr_five">Hardcover & Sude Booklet</div>
+            <div @click="toAcrylic(3)" class="pointer">Suede Box</div>
+            <div @click="toAcrylic(4)" class="pointer mr_five">Letterpress & 3D Embossed</div>
+            <div @click="toAcrylic(5)" class="pointer">Save The Date & Vows</div>
     </div>
      <div class="contact">
-            <div class="gmail">contant us: ellafff001@gmail.com</div>
             <div>
-                <a href="https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/" class="myfont_3" @click="handleSocialClick($event, 'https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/')"><i class="el-icon-thumb"></i>f</a>
-                <a href="https://www.instagram.com/eldesignweddinginvitation/" class="myfont_3 Instagram" @click="handleSocialClick($event, 'https://www.instagram.com/eldesignweddinginvitation/')"><i class="el-icon-thumb"></i>ins</a>
+                <div class="gmail cursorPointer" @click="toPhone">
+                    <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctOne.png" alt=""></img>
+                    &nbsp; wa.me
+                </div>
+                <div class="gmail">
+                    <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctFour.png" alt=""></img>
+                    &nbsp; ellafff001@gmail.com
+                </div>
+                <div class="gmail cursorPointer" @click="toInstagram">
+                    <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctThree.png" alt=""></img>
+                    &nbsp; EL Design Wedding Invitation
+                </div>
+                <div class="gmail cursorPointer" @click="toFacebook">
+                    <img style="width: 22px; height: 22px;" class="logo" src="../../assets/img/home/contanctTwo.png" alt=""></img>
+                    &nbsp;  EL Design Wedding Invitation
+                </div>
             </div>
         </div>
   </div>
@@ -39,6 +52,15 @@ export default {
     handleSocialClick(event, url) {
       event.preventDefault();
       window.open(url, '_blank');
+    },
+    toPhone() {
+        window.open("https://wa.me/8618814109741");
+    },
+    toFacebook() {
+        window.open("https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/");
+    },
+    toInstagram() {
+        window.open("https://www.instagram.com/eldesignweddinginvitation/");
     },
   }
 }

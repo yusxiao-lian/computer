@@ -13,21 +13,22 @@
         active-text-color="#ffd04b"
         @select="handleSelect"
       >
+        <el-menu-item index="3">
+          <span slot="title">Suede Box</span>
+        </el-menu-item>
+         <el-menu-item index="2">
+          <span slot="title">Hardcover & Sude Booklet</span>
+        </el-menu-item>
         <el-menu-item index="1">
           <span slot="title">Acrylic & Envelope</span>
         </el-menu-item>
-        <el-menu-item index="2">
-          <span slot="title">Hardcover & Sude Booklet</span>
-        </el-menu-item>
-        <el-menu-item index="3">
-          <span slot="title">Suede Box</span>
+       <el-menu-item index="5">
+          <span slot="title">Save The Date & Vows</span>
         </el-menu-item>
         <el-menu-item index="4">
           <span slot="title">Letterpress & 3D Embossed</span>
         </el-menu-item>
-        <el-menu-item index="5">
-          <span slot="title">Save The Date & Vows</span>
-        </el-menu-item>
+        
       </el-menu>
     </div>
     <div class="content">
@@ -67,7 +68,7 @@ export default {
   data() {
     return {
       productLists: [],
-      active: "1"
+      active: "3"
     };
   },
   components: {
@@ -76,7 +77,7 @@ export default {
   created() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     // 检查路由查询参数中是否有type
-    const type = this.$route.query.type || "1";
+    const type = this.$route.query.type || "3";
     this.active = type;
     this.productLists = productList(type) || [];
   },

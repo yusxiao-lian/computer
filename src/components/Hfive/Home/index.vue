@@ -28,34 +28,32 @@
         admire our giant range of meticulously crafted wedding invitations,
         spanning over a 6years of depicting beautiful love stories by stylishly
         combining art, tactile papers, materials and the best of modern and
-        traditional print applications. We can mix and match elements of
-        designs, combine papers, stocks, and embellishments and tailor your
-        wedding invites to your heart’s content until you are totally satisfied.
-        Let us create completely unique and
-        <strong>customized wedding invitation cards</strong> that will become
-        the perfect depiction for your special day to come, and remain a
-        beautiful memory to be treasured for years</span
+        traditional print applications. Let us create completely unique
+        <strong>wedding invitation cards</strong> that will become
+        the perfect depiction for your special day to come</span
       >
     </div>
     <div class="about_invitation">
       <div class="">
         <img
-          style="width: 100%; height: 520px"
-          src="@/assets/img/home/home_1.jpg"
+          style="width: 100%; height: 350px"
+          src="@/assets/img/home/acrylic.png"
+          alt=""
+        />
+      </div>
+      <div class="">
+        <img
+          style="width: 100%; height: 350px"
+          src="@/assets/img/home/velvetbox.png"
           alt=""
         />
       </div>
       <div class="descript">
-        <span class="font_myfont">Search for your perfect invitation</span>
+        <span class="font_myfont">Showcase | Bespoke Stories</span>
         <p class="descript_text">
-          Your <strong>wedding</strong> will be such a momentous and special
-          day, and we understand your <strong>invitations</strong> should be
-          personal and represent your style, wedding theme, vision and love
-          story. Work with us to create your very own couture wedding stationery
-          that reflects your fabulous style. We will put together the
-          possibilities to make the magic happen and get back to you with a
-          custom quote within 1 business day. The journey to perfect stationery
-          starts here!
+          Destiny's Compass
+              For the couple who journeyed to find each other. Craft your prologue.
+A bespoke invitation is more than paper—it’s a tangible piece of your narrative, designed uniquely for your “I do.”
         </p>
       </div>
     </div>
@@ -83,16 +81,6 @@
     <div class="video_box">
       <div class="video_img">
         <img :src="home_2" alt="" />
-        <div class="img_text">
-          <p class="font_myfont">Unique & Custom Designs</p>
-          <p>
-            At EL design Wedding Invitations, creativity knows no bounds! If you
-            can dream it, we can bring it to life. Each design is
-            custom-tailored to your unique style and vision, blending
-            sophistication and timeless elegance to create invitations that
-            leave a lasting impression on your special day.
-          </p>
-        </div>
       </div>
     </div>
     <div class="materials">
@@ -110,25 +98,19 @@
       <div class="descript_two">
         <span class="font_myfont">Never run out of stationery ideas</span>
         <p class="descript_text">
-          At <strong>EL design Wedding Invitations</strong>, we offer
-          custom-designed invitations for any event, featuring an extensive
-          selection of stunning, one-of-a-kind designs to choose from.
-          Personalize your invitations by selecting custom colors, elegant
-          fonts, and unique die-cut shapes for both invitations and envelopes.
-          Bring your vision to life with our bespoke invitation designs that
-          leave a lasting impression. Start customizing today!
+          At <strong>EL design Wedding Invitations</strong>,, we offer custom-designed invitations for any event, featuring an extensive selection of stunning, one-of-a-kind designs to choose from. Check out our collections of cards for every occasion including birthdays, weddings, baby showers and more
         </p>
       </div>
     </div>
     <div class="about_invitations">
-      <img style="width: 100%; height: 550px" :src="home_3" alt="" />
+      <img style="width: 100%; height: 360px" :src="home_3" alt="" />
     </div>
     <div class="materials">
       <div class="title">
         <span>MORE FROME US</span>
       </div>
       <div class="content-more">
-        <div v-for="(item, index) in moreList">
+        <div v-for="(item, index) in moreList" @click="toAcrylic(item.type)">
           <img :src="item.image" alt="" />
           <div class="more-text">{{ item.text }}</div>
         </div>
@@ -154,18 +136,18 @@ import banner_3 from "@/assets/img/banner/banner_3.jpg";
 import banner_4 from "@/assets/img/banner/banner_4.jpg";
 import banner_5 from "@/assets/img/banner/banner_5.jpg";
 import banner_6 from "@/assets/img/banner/banner_6.jpg";
-import video_1 from "@/assets/video/video_1.mp4";
-import home_2 from "@/assets/img/home/home_2.jpg";
+import video_1 from "@/assets/img/home/video.mp4";
+import home_2 from "@/assets/img/home/letterpress.jpg";
 import craft_1 from "@/assets/img/home/craft_1.jpg";
 import craft_2 from "@/assets/img/home/craft_2.jpg";
 // import craft_3 from "@/assets/img/home/craft_3.jpg";
 // import craft_4 from "@/assets/img/home/craft_4.jpg";
-import home_3 from "@/assets/img/home/home_3.jpg";
-import more_1 from "@/assets/img/mainProduct/pro_detail_2.jpg";
-import more_2 from "@/assets/img/mainProduct/pro_detail_2.jpg";
-import more_3 from "@/assets/img/mainProduct/pro_detail_2.jpg";
-import more_4 from "@/assets/img/mainProduct/pro_detail_2.jpg";
-import more_5 from "@/assets/img/mainProduct/pro_detail_2.jpg";
+import home_3 from "@/assets/img/home/Hardcover.png";
+import more_1 from "@/assets/img/home/home_producttwo.jpg";
+import more_2 from "@/assets/img/home/home_productfour.jpg";
+import more_3 from "@/assets/img/home/home_productone.jpg";
+import more_4 from "@/assets/img/home/home_productthree.jpg";
+import more_5 from "@/assets/img/home/home_productfive.jpg";
 
 export default {
   data() {
@@ -200,23 +182,28 @@ export default {
       moreList: [
         {
           image: more_1,
-          text: "Acrylic",
+          text: "Suede Box", 
+          type: 3,
         },
         {
           image: more_2,
-          text: "Hardcover",
+          text: "Hardcover & Sude Booklet",
+          type: 2,
         },
         {
           image: more_3,
-          text: "Box",
+          text: "Save The Date & Vows",
+          type: 5,
         },
         {
           image: more_4,
-          text: "Letterpress",
+          text: "Acrylic & Envelope",
+          type: 1,
         },
         {
           image: more_5,
-          text: "Luxury",
+          text: "Letterpress & 3D Embossed",
+          type: 4,
         },
       ],
     };
@@ -225,6 +212,9 @@ export default {
     "van-swipe": Swipe,
     "van-swipe-item": SwipeItem,
     hFiveBottom
+  },
+  created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
   mounted() {
     // 改进的视频自动播放逻辑
@@ -256,6 +246,16 @@ export default {
     }
   },
   methods: {
+     toAcrylic (index) {
+      localStorage.setItem("currentItemMenu", index);
+      this.$router.push({
+        path: '/HFiveProducts',
+        query: {
+          id: index
+        }
+      })
+      this.$bus.$emit("toHfiveMenu", "/HFiveProducts");
+    },
     attemptVideoPlay(videoElement) {
       // 移动设备自动播放策略
       videoElement.play().catch((error) => {
@@ -431,8 +431,8 @@ export default {
         font-size: 14px;
       }
       img {
-        width: 220px !important;
-        height: 280px !important;
+        width: 300px !important;
+        height: 300px !important;
         margin-right: 15px;
         flex-shrink: 0; /* 防止图片在flex容器中被压缩 */
       }

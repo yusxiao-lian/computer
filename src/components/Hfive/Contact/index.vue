@@ -12,35 +12,21 @@
       <div class="contact-info">
         <h2>Contact Information</h2>
         <div class="info-item">
-          <i class="icon location"></i>
-          <span>15th Floor, Innovation Building, No. 88, Science and Technology Park, Chaoyang District, Beijing</span>
-        </div>
-        <div class="info-item">
-          <i class="icon phone"></i>
-          <span>+86 10 8888 8888</span>
-        </div>
-        <div class="info-item">
           <i class="icon email"></i>
-          <span>contact@example.com</span>
+          <span>contact: ellafff001@gmail.com</span>
         </div>
         <div class="social-links">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="#" class="social-icon">
-              <span>WeChat</span>
-            </a>
-            <a href="#" class="social-icon">
-              <span>Weibo</span>
-            </a>
-            <a href="#" class="social-icon">
-              <span>LinkedIn</span>
-            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/8618814109741" class="social-icon wechat">WhatsApp</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/eldesignweddinginvitation" class="social-icon weibo">Instagram</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/" class="social-icon linkedin">Facebook</a>
           </div>
         </div>
       </div>
       
       <!-- 联系表单 -->
-      <div class="contact-form">
+      <!-- <div class="contact-form">
         <h2>Send Message</h2>
         <form @submit.prevent="submitForm">
           <div class="form-group">
@@ -61,14 +47,18 @@
           </div>
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
-      </div>
+      </div> -->
     </div>
-    
+    <hFiveBottom></hFiveBottom>
   </div>
 </template>
 
 <script>
+import hFiveBottom from "@/components/common/hFiveBottom.vue";
 export default {
+  components: {
+    hFiveBottom
+  },
   data() {
     return {
       form: {
@@ -78,6 +68,9 @@ export default {
         message: ''
       }
     };
+  },
+  created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
   methods: {
     submitForm() {

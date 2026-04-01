@@ -1,10 +1,5 @@
 <template>
   <div class="contact-page">
-    <!-- 页面标题 -->
-    <div class="hero-section">
-      <h1>Contact Us</h1>
-      <p>We look forward to hearing from you, whether it's questions, suggestions, or cooperation opportunities</p>
-    </div>
     
     <!-- 主要内容 -->
     <div class="contact-content">
@@ -25,14 +20,14 @@
         </div>
         <div class="social-links">
           <h3>Follow Us</h3>
-          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/8618814109741" class="social-icon wechat">WeChat</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/8618814109741" class="social-icon wechat">WhatsApp</a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/eldesignweddinginvitation" class="social-icon weibo">Instagram</a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/El-Design-Wedding-Invitation/61580327604321/" class="social-icon linkedin">Facebook</a>
         </div>
       </div>
       
       <!-- 联系表单 -->
-      <div class="contact-form">
+      <!-- <div class="contact-form">
         <h2>Send Message</h2>
         <form @submit.prevent="submitForm">
           <div class="form-group">
@@ -53,7 +48,7 @@
           </div>
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
-      </div>
+      </div> -->
     </div>
     
     <Bottom />
@@ -132,16 +127,17 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  /* max-width: 1200px; */
   margin: 0 auto 50px;
-  /* padding: 0 20px; */
+  margin-top: 100px;
 }
 
 /* 联系信息 */
 .contact-info {
+  min-height: 700px;
   margin-bottom: 30px;
   position: relative;
-  left: 25%;
+  /* left: 25%; */
+  left: 40%;
   min-width: 300px;
   width: 30%;
   background-color: rgba(255, 255, 255, 0.5);

@@ -26,14 +26,19 @@
           <span>{{  item }}</span>
       </div>
     </div>
+    <hFiveBottom />
   </div>
+  
 </template>
 <script>
 import { Swipe, SwipeItem } from "vant";
+import hFiveBottom from "../../common/hFiveBottom.vue";
 export default {
   components: {
     [Swipe.name]: Swipe,
     [SwipeItem.name]: SwipeItem,
+    hFiveBottom,
+    
   },
   computed: {
     currentDesc() {
@@ -70,6 +75,7 @@ export default {
     };
   },
   created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     let list = JSON.parse(localStorage.getItem("proChildrens"));
     this.proChildrens = list.childrens || [];
     this.productName = list.desc || "";

@@ -66,16 +66,16 @@
         <span @click="clearFilter"><van-icon name="close" /></span>
       </div>
       <div class="popup-content">
-        
-        <div @click="handleSelect(1)" class="popup-item">
-          Acrylic invitation
-        </div>
+        <div @click="handleSelect(3)" class="popup-item">Suede Box</div>
         <div @click="handleSelect(2)" class="popup-item">
-          Hardcover invitation
+          Hardcover & Sude Booklet
         </div>
-        <div @click="handleSelect(3)" class="popup-item">Box invitation</div>
-        <div @click="handleSelect(4)" class="popup-item">Letterpress</div>
-        <div @click="handleSelect(5)" class="popup-item">Luxury invitation</div>
+        <div @click="handleSelect(1)" class="popup-item">
+          Acrylic & Envelope
+        </div>
+        <div @click="handleSelect(5)" class="popup-item">Save The Date & Vows</div>
+        <div @click="handleSelect(4)" class="popup-item">Letterpress & 3D Embossed</div>
+        
       </div>
     </van-popup>
     <hFiveBottom></hFiveBottom>
@@ -115,6 +115,7 @@ export default {
     hFiveBottom
   },
   created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     this.acrylicList = productList(1) || [];
     this.hardcoverList = productList(2) || [];
     this.boxtList = productList(3) || [];
@@ -166,7 +167,7 @@ export default {
       this.showProductList = productList(index).slice(0, this.showNumber) || [];
       this.pageLength = productList(index).length;
       this.popupShow = false;
-      this.activeFilterName = index == 1 ? "Acrylic" : index == 2 ? "Hardcover" : index == 3 ? "Box" : index == 4 ? "Letterpress" : "Luxury";
+      this.activeFilterName = index == 1 ? "Acrylic & Envelope" : index == 2 ? "Hardcover & Sude Booklet" : index == 3 ? "Suede Box" : index == 4 ? "Letterpress & 3D Embossed" : "Save The Date & Vows";
     },
     toDetail(childrens) {
       localStorage.setItem("proChildrens", JSON.stringify(childrens))
