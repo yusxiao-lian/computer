@@ -26,27 +26,56 @@
       </div>
       
       <!-- 联系表单 -->
-      <div class="contact-form">
-        <h2>Send Message</h2>
-        <form @submit.prevent="submitForm">
+      <div 
+        v-loading="loading"
+        element-loading-text="Wait for a moment....."
+        element-loading-spinner="el-icon-loading" 
+        class="contact-form">
+        <h2>Send Your Message</h2>
+        <!-- <form> -->
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" v-model="form.name" required>
+            <label for="name">Name<span class="red-status">*</span></label>
+            <el-input v-model="form.title" type="text" id="name" maxlength="100" placeholder="Please enter your name"></el-input>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" v-model="form.email" required>
+            <el-input v-model="form.email" id="email" maxlength="100" placeholder="Please enter your email"></el-input>
           </div>
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" v-model="form.subject" required>
+            <label for="phone">Phone</label>
+            <el-input v-model="form.phone" type="text" id="phone" maxlength="100" placeholder="Please enter your phone number"></el-input>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" v-model="form.message" rows="5" required></textarea>
+            <label for="whatTime">The Date of wedding</label>
+            <el-date-picker v-model="form.whatTime" type="date" id="whatTime" placeholder="Pick a day"></el-date-picker>
           </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+          <div class="form-group">
+            <label for="country">Where are you from<span class="red-status">*</span></label>
+            <el-select v-model="form.country" filterable  type="select" id="country">
+              <el-option
+                v-for="item in countrys"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
+            <el-input v-model="form.otherCountry" maxlength="100" style="margin-top: 10px;" v-if="form.country === 'others'" type="text" id="otherCountry" placeholder="Please enter your country"></el-input>
+          </div>
+          <div class="form-group">
+            <label for="message">leave a message</label>
+            <textarea id="message" v-model="form.message" maxlength="400" rows="2" placeholder="Please leave a message"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="captcha">Verification Code<span class="red-status">*</span></label>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <input v-model="form.captcha" maxlength="4" type="text" id="captcha" placeholder="Please enter verification code" style="flex: 1;">
+              <div class="captcha-image" @click="generateCaptcha">
+                <img :src="captchaImage" alt="Verification Code" style="cursor: pointer; height: 40px; border-radius: 4px;">
+              </div>
+            </div>
+          </div>
+          <button @click="submitForm" class="submit-btn">Send Your Message</button>
+        <!-- </form> -->
       </div>
     </div>
     <hFiveBottom></hFiveBottom>
@@ -54,6 +83,10 @@
 </template>
 
 <script>
+import enLocale from 'element-ui/lib/locale/lang/en';
+import locale from 'element-ui/lib/locale';
+// 设置Element UI的语言为英文
+locale.use(enLocale);
 import hFiveBottom from "@/components/common/hFiveBottom.vue";
 export default {
   components: {
@@ -61,12 +94,51 @@ export default {
   },
   data() {
     return {
+      countrys: [
+        {value: 'United States', label: 'United States'},
+        {value: 'Canada', label: 'Canada'},
+        {value: 'Australia', label: 'Australia'},
+        {value: 'New Zealand', label: 'New Zealand'},
+        {value: 'United Kingdom', label: 'United Kingdom'},
+        {value: 'France', label: 'France'},
+        {value: 'Netherlands', label: 'Netherlands'},
+        {value: 'Belgium', label: 'Belgium'},
+        {value: 'Luxembourg', label: 'Luxembourg'},
+        {value: 'Ireland', label: 'Ireland'},
+        {value: 'Norway', label: 'Norway'},
+        {value: 'Sweden', label: 'Sweden'},
+        {value: 'Finland', label: 'Finland'},
+        {value: 'Denmark', label: 'Denmark'},
+        {value: 'Germany', label: 'Germany'},
+        {value: 'Switzerland', label: 'Switzerland'},
+        {value: 'Austria', label: 'Austria'},
+        {value: 'Italy', label: 'Italy'},
+        {value: 'Spain', label: 'Spain'},
+        {value: 'Portugal', label: 'Portugal'},
+        {value: 'Greece', label: 'Greece'},
+        {value: 'Slovenia', label: 'Slovenia'},
+        {value: 'Hungary', label: 'Hungary'},
+        {value: 'Saudi Arabia', label: 'Saudi Arabia'},
+        {value: 'United Arab Emirates', label: 'United Arab Emirates'},
+        {value: 'Qatar', label: 'Qatar'},
+        {value: 'Kuwait', label: 'Kuwait'},
+        {value: 'Egypt', label: 'Egypt'},
+        {value: 'others', label: 'others'},
+      ],
+      loading: false,
       form: {
-        name: '',
+        title: '',
         email: '',
-        subject: '',
-        message: ''
-      }
+        phone: '',
+        whatTime: '',
+        message: "",
+        country: "",
+        otherCountry: "",
+        captcha: ""
+      },
+      // 验证码相关
+      captchaImage: '',
+      captchaCode: ''
     };
   },
   created() {
@@ -75,33 +147,134 @@ export default {
    mounted() {
     // 检查emailjs是否加载
     if (window.emailjs) {
-      // 这里应该使用public key，而不是service ID
-      // 请访问 https://dashboard.emailjs.com/admin/account 获取正确的public key
       window.emailjs.init("8KVJ8ZchGRAcQzue5");
-      console.log(window.emailjs, " emailjs emailjs");
     } else {
       console.error("emailjs is not loaded");
     }
+    // 生成验证码
+    this.generateCaptcha();
   },
   methods: {
+    // 生成验证码
+    generateCaptcha() {
+      // 生成4位随机验证码
+      const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      let code = '';
+      for (let i = 0; i < 4; i++) {
+        code += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      this.captchaCode = code;
+      
+      // 生成验证码图片
+      const canvas = document.createElement('canvas');
+      canvas.width = 120;
+      canvas.height = 40;
+      const ctx = canvas.getContext('2d');
+      
+      // 背景
+      ctx.fillStyle = '#f8f9fa';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // 干扰线
+      for (let i = 0; i < 5; i++) {
+        ctx.strokeStyle = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`;
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.stroke();
+      }
+      
+      // 验证码文字
+      ctx.font = '20px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      for (let i = 0; i < code.length; i++) {
+        ctx.fillStyle = `rgb(${Math.random() * 100 + 50}, ${Math.random() * 100 + 50}, ${Math.random() * 100 + 50})`;
+        ctx.fillText(code[i], 20 + i * 25, 20);
+      }
+      
+      this.captchaImage = canvas.toDataURL('image/png');
+    },
     submitForm() {
       // 表单提交逻辑
-      console.log('Form submitted:', this.form);
-      // 这里可以添加实际的表单提交代码
-      alert('Message sent successfully! We will reply to you as soon as possible.');
-      // 重置表单
-      this.form = {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      };
+      if(!this.form.title) {
+        this.$message.warning('Please enter your name.');
+        return;
+      }
+      if(!this.form.email && !this.form.phone) {
+        this.$message.warning('Kindly leave your email or phone number.');
+        return;
+      }
+      // 邮箱格式校验
+      if(this.form.email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!emailRegex.test(this.form.email)) {
+          this.$message.warning('Please enter a valid email address.');
+          return;
+        }
+      }
+      // 手机号格式校验（只允许数字和+）
+      if(this.form.phone) {
+        const phoneRegex = /^[0-9+]+$/;
+        if(!phoneRegex.test(this.form.phone)) {
+          this.$message.warning('Phone number can only contain digits and +.');
+          return;
+        }
+      }
+      // 验证码校验
+      if(!this.form.captcha) {
+        this.$message.warning('Please enter verification code.');
+        return;
+      }
+      if(this.form.captcha.toUpperCase() !== this.captchaCode) {
+        this.$message.warning('Invalid verification code.');
+        this.generateCaptcha(); // 重新生成验证码
+        return;
+      }
+      if(!this.form.country) {
+        this.$message.warning('Please enter your country.');
+        return;
+      }
+      if(this.form.country === 'others' && !this.form.otherCountry) {
+        this.$message.warning('Please enter your country.');
+        return;
+      }
+      if (window.emailjs) {
+        this.loading = true;
+        // 使用emailjs发送邮件 
+        window.emailjs.send('service_m9q1exx', 'template_37s5xtw', this.form)
+        .then((response) => {
+          this.loading = false;
+          alert('Message sent successfully! We will reply to you as soon as possible.');
+          // 重置表单
+          this.form = {
+            title: '',
+            email: '',
+            phone: '',
+            whatTime: '',
+            message: "",
+            country: "",
+            otherCountry: "",
+            captcha: ""
+          };
+          // 重新生成验证码
+          this.generateCaptcha();
+        }).catch((error) => {
+          this.loading = false;
+          alert('Failed to send message. Please try again later.');
+        });
+      } else {
+        alert('Failed to send message. Please try again later.');
+      }
     }
   }
 };
 </script>
 
 <style scoped>
+.red-status {
+  color: red;
+}
 .contact-page {
   font-family: 'Arial', sans-serif;
   color: #333;

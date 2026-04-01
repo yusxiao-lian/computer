@@ -33,7 +33,7 @@
         element-loading-spinner="el-icon-loading" 
         class="contact-form">
         <h2>Send Your Message</h2>
-        <form>
+        <!-- <form> -->
           <div class="form-group">
             <label for="name">Name<span class="red-status">*</span></label>
             <el-input v-model="form.title" maxlength="100" type="text" id="name" placeholder="Please enter your name"></el-input>
@@ -65,7 +65,7 @@
           </div>
           <div class="form-group">
             <label for="subject">Where are you from<span class="red-status">*</span></label>
-            <el-select v-model="form.country" placeholder="Select">
+            <el-select v-model="form.country" filterable  placeholder="Select">
               <el-option
                 v-for="item in countrys"
                 :key="item.value"
@@ -79,8 +79,17 @@
             <label for="message">leave a message</label>
             <el-input type="textarea" v-model="form.message" maxlength="400" id="message" rows="2" placeholder="Please leave a message"></el-input>
           </div>
+          <div class="form-group">
+            <label for="captcha">Verification Code<span class="red-status">*</span></label>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <el-input v-model="form.captcha" maxlength="4" type="text" id="captcha" placeholder="Please enter verification code" style="flex: 1;"></el-input>
+              <div class="captcha-image" @click="generateCaptcha">
+                <img :src="captchaImage" alt="Verification Code" style="cursor: pointer; height: 40px; border-radius: 4px;">
+              </div>
+            </div>
+          </div>
           <button @click="submitForm" type="submit" class="submit-btn">Send Your Message</button>
-        </form>
+        <!-- </form> -->
       </div>
     </div>
     
@@ -103,24 +112,33 @@ export default {
     return {
       countrys: [
         {value: 'United States', label: 'United States'},
+        {value: 'Canada', label: 'Canada'},
+        {value: 'Australia', label: 'Australia'},
+        {value: 'New Zealand', label: 'New Zealand'},
         {value: 'United Kingdom', label: 'United Kingdom'},
         {value: 'France', label: 'France'},
-        {value: 'Germany', label: 'Germany'},
-        {value: 'Spain', label: 'Spain'},
-        {value: 'Italy', label: 'Italy'},
-        {value: 'Portugal', label: 'Portugal'},
-        {value: 'Switzerland', label: 'Switzerland'},
-        {value: 'Austria', label: 'Austria'},
-        {value: 'Belgium', label: 'Belgium'},
         {value: 'Netherlands', label: 'Netherlands'},
-        {value: 'Denmark', label: 'Denmark'},
+        {value: 'Belgium', label: 'Belgium'},
+        {value: 'Luxembourg', label: 'Luxembourg'},
+        {value: 'Ireland', label: 'Ireland'},
         {value: 'Norway', label: 'Norway'},
         {value: 'Sweden', label: 'Sweden'},
         {value: 'Finland', label: 'Finland'},
-        {value: 'Ireland', label: 'Ireland'},
+        {value: 'Denmark', label: 'Denmark'},
+        {value: 'Germany', label: 'Germany'},
+        {value: 'Switzerland', label: 'Switzerland'},
+        {value: 'Austria', label: 'Austria'},
+        {value: 'Italy', label: 'Italy'},
+        {value: 'Spain', label: 'Spain'},
+        {value: 'Portugal', label: 'Portugal'},
         {value: 'Greece', label: 'Greece'},
-        {value: 'China', label: 'China'},
-        {value: 'India', label: 'India'},
+        {value: 'Slovenia', label: 'Slovenia'},
+        {value: 'Hungary', label: 'Hungary'},
+        {value: 'Saudi Arabia', label: 'Saudi Arabia'},
+        {value: 'United Arab Emirates', label: 'United Arab Emirates'},
+        {value: 'Qatar', label: 'Qatar'},
+        {value: 'Kuwait', label: 'Kuwait'},
+        {value: 'Egypt', label: 'Egypt'},
         {value: 'others', label: 'others'},
       ],
       loading: false,
@@ -131,8 +149,12 @@ export default {
         whatTime: '',
         message: "",
         country: "",
-        otherCountry: ""
-      }
+        otherCountry: "",
+        captcha: ""
+      },
+      // 验证码相关
+      captchaImage: '',
+      captchaCode: ''
     };
   },
    mounted() {
@@ -142,8 +164,50 @@ export default {
     } else {
       console.error("emailjs is not loaded");
     }
+    // 生成验证码
+    this.generateCaptcha();
   },
   methods: {
+    // 生成验证码
+    generateCaptcha() {
+      // 生成4位随机验证码
+      const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      let code = '';
+      for (let i = 0; i < 4; i++) {
+        code += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      this.captchaCode = code;
+      
+      // 生成验证码图片
+      const canvas = document.createElement('canvas');
+      canvas.width = 120;
+      canvas.height = 40;
+      const ctx = canvas.getContext('2d');
+      
+      // 背景
+      ctx.fillStyle = '#f8f9fa';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // 干扰线
+      for (let i = 0; i < 5; i++) {
+        ctx.strokeStyle = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`;
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.stroke();
+      }
+      
+      // 验证码文字
+      ctx.font = '20px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      for (let i = 0; i < code.length; i++) {
+        ctx.fillStyle = `rgb(${Math.random() * 100 + 50}, ${Math.random() * 100 + 50}, ${Math.random() * 100 + 50})`;
+        ctx.fillText(code[i], 20 + i * 25, 20);
+      }
+      
+      this.captchaImage = canvas.toDataURL('image/png');
+    },
     submitForm() {
       // 表单提交逻辑
       console.log('Form submitted:', this.form);
@@ -170,6 +234,16 @@ export default {
           this.$message.warning('Phone number can only contain digits and +.');
           return;
         }
+      }
+      // 验证码校验
+      if(!this.form.captcha) {
+        this.$message.warning('Please enter verification code.');
+        return;
+      }
+      if(this.form.captcha.toUpperCase() !== this.captchaCode) {
+        this.$message.warning('Invalid verification code.');
+        this.generateCaptcha(); // 重新生成验证码
+        return;
       }
       // if(!this.form.whatTime) {
       //   this.$message.warning('Please enter The Date of wedding.');
@@ -198,8 +272,11 @@ export default {
             whatTime: '',
             message: "",
             country: "",
-            otherCountry: ""
+            otherCountry: "",
+            captcha: ""
           }
+          // 重新生成验证码
+          this.generateCaptcha();
         }).catch((error) => {
           this.loading = false;
           this.$message.error('Failed to send message. Please try again later.');
@@ -213,6 +290,9 @@ export default {
 </script>
 
 <style scoped>
+.captcha-image {
+  padding-top: 9px;
+}
 .red-status {
   color: red;
 }
