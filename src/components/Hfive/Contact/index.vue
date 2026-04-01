@@ -26,7 +26,7 @@
       </div>
       
       <!-- 联系表单 -->
-      <!-- <div class="contact-form">
+      <div class="contact-form">
         <h2>Send Message</h2>
         <form @submit.prevent="submitForm">
           <div class="form-group">
@@ -47,7 +47,7 @@
           </div>
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
-      </div> -->
+      </div>
     </div>
     <hFiveBottom></hFiveBottom>
   </div>
@@ -71,6 +71,17 @@ export default {
   },
   created() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
+   mounted() {
+    // 检查emailjs是否加载
+    if (window.emailjs) {
+      // 这里应该使用public key，而不是service ID
+      // 请访问 https://dashboard.emailjs.com/admin/account 获取正确的public key
+      window.emailjs.init("8KVJ8ZchGRAcQzue5");
+      console.log(window.emailjs, " emailjs emailjs");
+    } else {
+      console.error("emailjs is not loaded");
+    }
   },
   methods: {
     submitForm() {
